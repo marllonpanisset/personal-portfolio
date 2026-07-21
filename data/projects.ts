@@ -16,7 +16,7 @@ export const projects: Project[] = [
       "Site pessoal desenvolvido com foco em performance, experiência do usuário e apresentação profissional da trajetória em Tecnologia da Informação.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/marllonpanisset/personal-portfolio",
-    demo: "https://marllonpanisset.netlify.app"
+    demo: "https://marllon.netlify.app"
   },
   {
     name: "Brototec",
