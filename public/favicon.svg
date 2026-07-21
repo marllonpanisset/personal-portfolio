@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#0B0E14"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#20242F" stroke-width="1"/>
+  <text x="32" y="40" font-family="monospace" font-size="24" font-weight="600" fill="#E7EAF1" text-anchor="middle">MP</text>
+  <circle cx="49" cy="17" r="4" fill="#4FD1C5"/>
+</svg>
