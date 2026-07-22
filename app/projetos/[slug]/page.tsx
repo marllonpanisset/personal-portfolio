@@ -47,7 +47,7 @@ export default function ProjectPage({
 
             {/* Voltar */}
             <Link
-              href="/#projetos"
+              href="/projetos"
               className="
                 inline-flex
                 items-center

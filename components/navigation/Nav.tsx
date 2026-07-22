@@ -4,18 +4,18 @@ import { Container } from "@/components/ui/Container";
 import { profile } from "@/data/profile";
 
 const links = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#experiencia", label: "Experiência" },
-  { href: "#competencias", label: "Competências" },
-  { href: "#projetos", label: "Projetos" },
-  { href: "#contato", label: "Contato" },
+  { href: "/#sobre", label: "Sobre" },
+  { href: "/#experiencia", label: "Experiência" },
+  { href: "/#competencias", label: "Competências" },
+  { href: "/#projetos", label: "Projetos" },
+  { href: "/#contato", label: "Contato" },
 ];
 
 export function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-base-border/70 bg-base/80 backdrop-blur-md">
       <Container className="flex h-16 items-center justify-between">
-        <a href="#top" className="font-display text-sm font-semibold tracking-tight text-ink">
+        <a href="/#top" className="font-display text-sm font-semibold tracking-tight text-ink">
           {profile.name
             .split(" ")
             .map((n) => n[0])
