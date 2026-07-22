@@ -4,9 +4,9 @@
 export const profile = {
   name: "Marllon Panisset",
   role: "Analista de Suporte Técnico",
-  roleSecondary: "Application Support | Cyber Security em formação",
+  roleSecondary: "Infraestrutura | Sustentação de Aplicações | Desenvolvimento Front-End",
   tagline:
-    "Profissional de TI com 11 anos de experiência em suporte técnico, infraestrutura, sustentação de aplicações web e análise de ambientes em produção.",
+    "Profissional de TI com 11 anos de experiência em ambientes corporativos, atuando com suporte técnico N1/N2, infraestrutura, manutenção de estações, redes, sistemas operacionais e sustentação de aplicações.",
   location: "Rio de Janeiro, Brasil",
   yearsOfExperience: 11,
   status: "open_to_work",
@@ -21,18 +21,19 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "Minha trajetória em TI começou no suporte técnico N1/N2 em ambiente hospitalar, atuando com sistemas essenciais para a operação diária. Essa experiência desenvolveu minha visão sobre a importância da disponibilidade, estabilidade e segurança dos ambientes tecnológicos.",
+    "Minha trajetória em TI começou no suporte técnico corporativo, atuando na preparação e manutenção de estações de trabalho, montagem de computadores, instalação e configuração de sistemas Windows, rotinas de backup, compartilhamentos de rede e controle de usuários e permissões de acesso.",
 
-    "Ao longo dos anos, ampliei meus conhecimentos em infraestrutura, redes TCP/IP, sistemas operacionais Windows e Linux, além de atuar na identificação e resolução de incidentes técnicos em ambientes corporativos.",
+    "Essa experiência me proporcionou uma base sólida em infraestrutura, permitindo atuar no suporte N1/N2, atendimento aos usuários, troubleshooting de hardware e software, análise de incidentes, priorização de demandas e resolução de problemas com foco na continuidade operacional dos ambientes.",
 
-    "Também desenvolvi experiência na sustentação de aplicações web em produção, realizando troubleshooting, análise de erros, investigação de causa raiz, validação de APIs REST, utilização de DevTools e comunicação com equipes de desenvolvimento.",
+    "Ao longo da carreira, ampliei minha atuação para ambientes web, unindo conhecimentos de suporte e desenvolvimento para realizar análises de problemas em aplicações, investigação de falhas, validações em produção, inspeção utilizando ferramentas de navegador e colaboração com equipes técnicas.",
 
-    "Minha experiência anterior como Desenvolvedor Front-End complementa minha atuação em suporte, permitindo compreender todo o ciclo de vida de uma aplicação — desde o desenvolvimento até sua operação, manutenção e evolução contínua. Atualmente, estou aprofundando meus conhecimentos em segurança da informação.",
+    "Minha experiência anterior como Desenvolvedor Front-End complementa minha atuação em suporte e sustentação, proporcionando uma visão mais completa do ciclo de vida das aplicações, desde o desenvolvimento até a operação, facilitando a comunicação entre suporte, desenvolvimento, infraestrutura e áreas de negócio.",
   ],
+
   focusAreas: [
-    "Suporte técnico N1/N2 e gerenciamento de incidentes",
-    "Sustentação de aplicações web em produção",
-    "Infraestrutura, redes e sistemas operacionais",
-    "Troubleshooting e análise de causa raiz",
+    "Suporte técnico N1/N2 e tratamento de incidentes",
+    "Infraestrutura, redes TCP/IP e sistemas operacionais",
+    "Sustentação e troubleshooting de aplicações",
+    "Análise de problemas e causa raiz",
   ],
 } as const;
