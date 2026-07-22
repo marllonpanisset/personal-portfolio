@@ -26,27 +26,29 @@ export const projects: Project[] = [
     category: "Projeto Pessoal",
 
     description:
-      "Site pessoal desenvolvido para apresentar minha trajetória em Tecnologia da Informação, experiências profissionais e projetos desenvolvidos.",
+      "Portfólio e blog desenvolvidos para apresentar minha trajetória em tecnologia, compartilhar conhecimentos e reunir projetos em um único lugar.",
 
     longDescription:
-      "Aplicação criada para consolidar minha presença profissional na área de tecnologia, reunindo experiência em suporte técnico, infraestrutura, sustentação de aplicações e desenvolvimento Front-End em uma apresentação moderna e objetiva.",
+      "Aplicação desenvolvida para consolidar minha presença profissional na área de tecnologia, reunindo experiências, projetos e um blog onde documento estudos, aprendizados e minha evolução em desenvolvimento, suporte, sistemas e segurança da informação.",
 
     problem:
-      "Criar uma apresentação profissional que fosse além de um currículo tradicional, permitindo demonstrar experiência técnica, evolução de carreira e projetos realizados.",
+      "Criar uma plataforma que fosse além de um currículo tradicional, permitindo apresentar minha experiência profissional, centralizar projetos e compartilhar conhecimento através de um blog técnico.",
 
     solution:
-      "Desenvolvimento de uma aplicação utilizando Next.js com componentes reutilizáveis, arquitetura organizada, foco em performance, responsividade e experiência do usuário.",
+      "Desenvolvimento de uma aplicação utilizando Next.js App Router com arquitetura modular, componentes reutilizáveis, sistema de blog em MDX, foco em performance, SEO, responsividade e experiência do usuário.",
 
     highlights: [
+      "Portfólio profissional integrado ao blog",
+      "Sistema de blog com MDX",
       "Arquitetura utilizando Next.js App Router",
       "Componentização e organização modular",
       "Design responsivo com foco em UX",
-      "Estrutura preparada para páginas de projetos e blog",
+      "SEO e geração dinâmica de páginas",
     ],
 
     image: "/projects/portfolio.png",
 
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "MDX"],
 
     github: "https://github.com/marllonpanisset/personal-portfolio",
 
