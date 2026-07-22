@@ -8,30 +8,51 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: "Suporte",
-    items: ["Application Support", "Troubleshooting", "Suporte N1/N2", "APIs REST", "DevTools"],
+    label: "Suporte Técnico",
+    items: [
+      "Suporte N1/N2",
+      "Atendimento ao usuário",
+      "Troubleshooting",
+      "Gestão de incidentes",
+      "Análise de causa raiz",
+      "Application Support",
+      "DevTools",
+    ],
   },
   {
     label: "Infraestrutura",
-    items: ["Linux", "Windows", "Redes TCP/IP"],
+    items: [
+      "Windows",
+      "Linux",
+      "Redes TCP/IP",
+      "Configuração de estações",
+      "Hardware",
+      "Backup",
+      "Permissões de acesso",
+    ],
   },
   {
-    label: "Desenvolvimento",
+    label: "Aplicações & Desenvolvimento",
     items: [
       "Git/GitHub",
+      "JavaScript",
       "React",
       "Next.js",
       "TypeScript",
-      "JavaScript",
       "HTML5",
       "CSS3",
       "Tailwind CSS",
-      "Python",
-      "SQL"
+      "Python básico",
+      "SQL básico",
+      "APIs REST (conceitos)",
     ],
   },
   {
     label: "Plataformas",
-    items: ["WordPress", "VTEX"],
+    items: [
+      "WordPress",
+      "VTEX",
+      "E-commerce",
+    ],
   },
 ];
