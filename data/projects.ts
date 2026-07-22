@@ -17,9 +17,7 @@ export type Project = {
   demo?: string;
 };
 
-
 export const projects: Project[] = [
-
   {
     slug: "portfolio-profissional",
 
@@ -30,18 +28,14 @@ export const projects: Project[] = [
     description:
       "Site pessoal desenvolvido para apresentar minha trajetória em Tecnologia da Informação, experiências profissionais e projetos desenvolvidos.",
 
-
     longDescription:
       "Aplicação criada para consolidar minha presença profissional na área de tecnologia, reunindo experiência em suporte técnico, infraestrutura, sustentação de aplicações e desenvolvimento Front-End em uma apresentação moderna e objetiva.",
-
 
     problem:
       "Criar uma apresentação profissional que fosse além de um currículo tradicional, permitindo demonstrar experiência técnica, evolução de carreira e projetos realizados.",
 
-
     solution:
       "Desenvolvimento de uma aplicação utilizando Next.js com componentes reutilizáveis, arquitetura organizada, foco em performance, responsividade e experiência do usuário.",
-
 
     highlights: [
       "Arquitetura utilizando Next.js App Router",
@@ -50,63 +44,44 @@ export const projects: Project[] = [
       "Estrutura preparada para páginas de projetos e blog",
     ],
 
+    image: "/projects/portfolio.png",
 
-    image:
-      "/projects/portfolio.png",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
 
+    github: "https://github.com/marllonpanisset/personal-portfolio",
 
-    stack: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
-
-
-    github:
-      "https://github.com/marllonpanisset/personal-portfolio",
-
-
-    demo:
-      "https://marllon.netlify.app",
+    demo: "https://marllon.netlify.app",
   },
   {
-  slug: "brototec",
+    slug: "brototec",
 
-  name: "Brototec",
+    name: "Brototec",
 
-  category: "Projeto Experimental",
+    category: "Projeto Experimental",
 
-  description:
-    "Experimento de posicionamento digital e construção de uma identidade visual para explorar conceitos de produto, interface e experiência do usuário.",
+    description:
+      "Experimento de posicionamento digital e construção de uma identidade visual para explorar conceitos de produto, interface e experiência do usuário.",
 
-  longDescription:
-    "Projeto experimental criado para estudar como uma marca digital poderia ser estruturada do zero, explorando identidade visual, arquitetura de informação, design de interfaces e desenvolvimento Front-End.",
+    longDescription:
+      "Projeto experimental criado para estudar como uma marca digital poderia ser estruturada do zero, explorando identidade visual, arquitetura de informação, design de interfaces e desenvolvimento Front-End.",
 
-  problem:
-    "Explorar na prática como transformar uma ideia abstrata em uma experiência digital completa, passando por estratégia, design e implementação.",
+    problem:
+      "Explorar na prática como transformar uma ideia abstrata em uma experiência digital completa, passando por estratégia, design e implementação.",
 
-  solution:
-    "Desenvolvimento de uma interface completa utilizando Next.js, criando páginas, componentes reutilizáveis e uma experiência visual focada em clareza e usabilidade.",
+    solution:
+      "Desenvolvimento de uma interface completa utilizando Next.js, criando páginas, componentes reutilizáveis e uma experiência visual focada em clareza e usabilidade.",
 
-  highlights: [
-    "Criação de identidade e conceito visual",
-    "Arquitetura de páginas e experiência do usuário",
-    "Desenvolvimento Front-End completo",
-    "Componentização utilizando Next.js",
-    "Estudo de posicionamento de produto digital",
-  ],
+    highlights: [
+      "Criação de identidade e conceito visual",
+      "Arquitetura de páginas e experiência do usuário",
+      "Desenvolvimento Front-End completo",
+      "Componentização utilizando Next.js",
+      "Estudo de posicionamento de produto digital",
+    ],
 
-  image:
-    "/projects/brototec.png",
+    image: "/projects/brototec.png",
 
-  stack: [
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "UX/UI Design",
-    "Vercel",
-  ],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "UX/UI Design", "Vercel"],
   },
   {
     slug: "pousada-profissional",
@@ -134,10 +109,7 @@ export const projects: Project[] = [
       "Foco em conversão e experiência do usuário",
     ],
 
-
-    image:
-      "/projects/pousada-profissional.png",
-
+    image: "/projects/pousada-profissional.png",
 
     stack: [
       "Next.js",
@@ -147,37 +119,28 @@ export const projects: Project[] = [
       "Static Generation",
     ],
 
+    github: "https://github.com/marllonpanisset/pousada-profissional",
 
-    github:
-      "https://github.com/marllonpanisset/pousada-profissional",
-
-
-    demo:
-      "https://pousada-profissional.netlify.app/",
+    demo: "https://pousada-profissional.netlify.app/",
   },
   {
     slug: "dashboard-interativo-de-salarios",
 
-    name:
-      "Dashboard Interativo de Salários em Data Science",
+    name: "Dashboard Interativo de Salários em Data Science",
 
     category: "Data Science",
 
     description:
       "Dashboard desenvolvido com Python para análise e visualização de dados salariais utilizando gráficos interativos.",
 
-
     longDescription:
       "Projeto desenvolvido durante estudos de Data Science com objetivo de transformar uma base de dados em uma aplicação visual interativa, permitindo exploração através de filtros e gráficos.",
-
 
     problem:
       "Dados brutos possuem pouco valor quando não são tratados e apresentados de forma clara para análise.",
 
-
     solution:
       "Construção de um dashboard utilizando Python para tratamento, análise e visualização de dados através de uma interface interativa.",
-
 
     highlights: [
       "Manipulação e tratamento de dados",
@@ -186,25 +149,13 @@ export const projects: Project[] = [
       "Desenvolvimento utilizando Python",
     ],
 
+    image: "/projects/dashboard-salarios.png",
 
-    image:
-      "/projects/dashboard-salarios.png",
-
-
-    stack: [
-      "Python",
-      "Streamlit",
-      "Pandas",
-      "Data Analysis",
-    ],
-
+    stack: ["Python", "Streamlit", "Pandas", "Data Analysis"],
 
     github:
       "https://github.com/marllonpanisset/dashboard-interativo-com-python",
 
-
-    demo:
-      "https://dashboard-interativo-com-python.streamlit.app/",
+    demo: "https://dashboard-interativo-com-python.streamlit.app/",
   },
-
 ];

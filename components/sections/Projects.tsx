@@ -2,12 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowUpRight,
-  ExternalLink,
-  FolderGit2,
-  Github,
-} from "lucide-react";
+import { ArrowUpRight, ExternalLink, FolderGit2, Github } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { Container } from "@/components/ui/Container";
@@ -64,12 +59,7 @@ export function Projects() {
                   hover:border-signal
                 "
               >
-
-                <Link
-                  href={`/projetos/${project.slug}`}
-                  className="block"
-                >
-
+                <Link href={`/projetos/${project.slug}`} className="block">
                   {project.image && (
                     <div
                       className="
@@ -97,9 +87,7 @@ export function Projects() {
                     </div>
                   )}
 
-
                   <div className="p-6">
-
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <h3 className="font-display text-base font-semibold text-ink">
@@ -135,11 +123,9 @@ export function Projects() {
                       />
                     </div>
 
-
                     <p className="mt-3 text-sm leading-relaxed text-ink-muted">
                       {project.description}
                     </p>
-
 
                     <div className="mt-5 flex flex-wrap gap-2">
                       {project.stack.map((tech) => (
@@ -161,18 +147,13 @@ export function Projects() {
                       ))}
                     </div>
 
-
                     <div className="mt-5 font-mono text-xs text-signal">
                       Ver detalhes do projeto →
                     </div>
-
                   </div>
-
                 </Link>
 
-
                 <div className="px-6 pb-6 flex flex-wrap gap-3">
-
                   {project.github && (
                     <a
                       href={project.github}
@@ -200,7 +181,6 @@ export function Projects() {
                     </a>
                   )}
 
-
                   {project.demo && (
                     <a
                       href={project.demo}
@@ -225,9 +205,7 @@ export function Projects() {
                       Demo
                     </a>
                   )}
-
                 </div>
-
               </motion.article>
             ))}
           </div>

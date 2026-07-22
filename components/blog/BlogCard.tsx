@@ -3,16 +3,11 @@ import Link from "next/link";
 import type { BlogPost } from "@/types/blog";
 import CategoryBadge from "./CategoryBadge";
 
-
 type Props = {
   post: BlogPost;
 };
 
-
-export default function BlogCard({
-  post,
-}: Props) {
-
+export default function BlogCard({ post }: Props) {
   return (
     <article
       className="
@@ -26,8 +21,7 @@ export default function BlogCard({
         hover:border-primary/30
       "
     >
-
-      <CategoryBadge category={post.category}/>
+      <CategoryBadge category={post.category} />
 
       <h2
         className="
@@ -36,13 +30,12 @@ export default function BlogCard({
           text-xl
           font-bold
           text-white
-          group-hover:text-primary
           transition-colors
+          group-hover:text-primary
         "
       >
         {post.title}
       </h2>
-
 
       <p
         className="
@@ -55,7 +48,6 @@ export default function BlogCard({
         {post.excerpt}
       </p>
 
-
       <div
         className="
           mt-5
@@ -65,15 +57,38 @@ export default function BlogCard({
           text-muted-foreground
         "
       >
-        <span>
-          {post.date}
-        </span>
+        <span>{post.date}</span>
 
-        <span>
-          {post.readingTime}
-        </span>
+        {post.readingTime && <span>{post.readingTime}</span>}
       </div>
 
+      {post.tags.length > 0 && (
+        <div
+          className="
+            mt-5
+            flex
+            flex-wrap
+            gap-2
+          "
+        >
+          {post.tags.map((tag) => (
+            <span
+              key={tag}
+              className="
+                rounded-full
+                border
+                border-border/40
+                px-2
+                py-1
+                text-xs
+                text-muted-foreground
+              "
+            >
+              #{tag}
+            </span>
+          ))}
+        </div>
+      )}
 
       <Link
         href={`/blog/${post.slug}`}
@@ -83,11 +98,12 @@ export default function BlogCard({
           text-sm
           font-semibold
           text-primary
+          transition-opacity
+          hover:opacity-80
         "
       >
         Ler artigo →
       </Link>
-
     </article>
   );
 }

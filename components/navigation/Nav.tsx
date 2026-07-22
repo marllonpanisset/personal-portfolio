@@ -18,14 +18,20 @@ const links = [
 
 const socialLinks = [
   { href: "https://github.com/marllonpanisset", label: "GitHub", icon: Github },
-  { href: "https://linkedin.com/in/marllon-panisset", label: "LinkedIn", icon: Linkedin },
+  {
+    href: "https://linkedin.com/in/marllon-panisset",
+    label: "LinkedIn",
+    icon: Linkedin,
+  },
   { href: "mailto:marllon.web@gmail.com", label: "Email", icon: Mail },
 ];
 
 // ── Componente de status "Disponível" ──────────────────────────────
 function AvailabilityBadge({ className = "" }: { className?: string }) {
   return (
-    <div className={`flex items-center gap-2 font-mono text-[11px] text-ink-muted ${className}`}>
+    <div
+      className={`flex items-center gap-2 font-mono text-[11px] text-ink-muted ${className}`}
+    >
       <span className="relative flex h-1.5 w-1.5">
         <span className="absolute inline-flex h-full w-full animate-blink rounded-full bg-signal" />
       </span>

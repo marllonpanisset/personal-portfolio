@@ -2,10 +2,7 @@ type Props = {
   category: string;
 };
 
-
-export default function CategoryBadge({
-  category,
-}: Props) {
+export default function CategoryBadge({ category }: Props) {
   return (
     <span
       className="

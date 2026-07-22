@@ -9,14 +9,12 @@ import { profile } from "@/data/profile";
 import { Nav } from "@/components/navigation/Nav";
 import { Footer } from "@/components/sections/Footer";
 
-
 const display = Space_Grotesk({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
   variable: "--font-display",
   display: "swap",
 });
-
 
 const body = Inter({
   subsets: ["latin"],
@@ -25,7 +23,6 @@ const body = Inter({
   display: "swap",
 });
 
-
 const mono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
@@ -33,9 +30,7 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
-
 const siteUrl = "https://marllon.netlify.app";
-
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -66,7 +61,6 @@ export const metadata: Metadata = {
 
   creator: profile.name,
 
-
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -76,18 +70,15 @@ export const metadata: Metadata = {
     siteName: profile.name,
   },
 
-
   twitter: {
     card: "summary_large_image",
     title: `${profile.name} — ${profile.role} & ${profile.roleSecondary}`,
     description: profile.tagline,
   },
 
-
   icons: {
     icon: "/favicon.svg",
   },
-
 
   robots: {
     index: true,
@@ -95,34 +86,23 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
   return (
-
     <html
       lang="pt-BR"
       className={`${display.variable} ${body.variable} ${mono.variable}`}
     >
-
       <body>
-
         <Nav />
 
         {children}
 
         <Footer />
-
       </body>
-
     </html>
-
   );
-
 }

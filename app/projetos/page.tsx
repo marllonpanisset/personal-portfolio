@@ -1,4 +1,3 @@
-
 import { Footer } from "@/components/sections/Footer";
 
 import { Nav } from "@/components/navigation/Nav";
@@ -13,9 +12,7 @@ export default function ProjectsPage() {
       <main className="pt-24">
         <section className="border-b border-base-border py-20">
           <Container>
-            <span className="font-mono text-sm text-signal">
-              Projetos
-            </span>
+            <span className="font-mono text-sm text-signal">Projetos</span>
 
             <h1 className="mt-4 font-display text-4xl font-semibold text-ink md:text-5xl">
               Projetos desenvolvidos

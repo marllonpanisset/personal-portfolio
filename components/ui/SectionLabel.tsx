@@ -1,4 +1,10 @@
-export function SectionLabel({ index, label }: { index: string; label: string }) {
+export function SectionLabel({
+  index,
+  label,
+}: {
+  index: string;
+  label: string;
+}) {
   return (
     <div className="mb-10 flex items-center gap-4">
       <span className="font-mono text-xs text-signal">{index}</span>

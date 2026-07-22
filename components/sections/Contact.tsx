@@ -1,17 +1,43 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
+import {
+  ArrowUpRight,
+  Github,
+  Linkedin,
+  Mail,
+  MessageCircle,
+} from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { profile } from "@/data/profile";
 import { fadeUp, viewportOnce } from "@/lib/animations";
 
 const channels = [
-  { label: "E-mail", value: "Enviar mensagem", href: profile.links.email, icon: Mail },
-  { label: "LinkedIn", value: "/in/marllon-panisset", href: profile.links.linkedin, icon: Linkedin },
-  { label: "GitHub", value: "@marllonpanisset", href: profile.links.github, icon: Github },
-  { label: "WhatsApp", value: "Falar agora", href: profile.links.whatsapp, icon: MessageCircle },
+  {
+    label: "E-mail",
+    value: "Enviar mensagem",
+    href: profile.links.email,
+    icon: Mail,
+  },
+  {
+    label: "LinkedIn",
+    value: "/in/marllon-panisset",
+    href: profile.links.linkedin,
+    icon: Linkedin,
+  },
+  {
+    label: "GitHub",
+    value: "@marllonpanisset",
+    href: profile.links.github,
+    icon: Github,
+  },
+  {
+    label: "WhatsApp",
+    value: "Falar agora",
+    href: profile.links.whatsapp,
+    icon: MessageCircle,
+  },
 ];
 
 export function Contact() {
@@ -51,7 +77,11 @@ export function Contact() {
               className="group flex items-center justify-between gap-4 bg-base-surface/40 p-6 transition-colors hover:bg-base-surface"
             >
               <div className="flex items-center gap-4">
-                <channel.icon size={18} className="text-signal" strokeWidth={1.75} />
+                <channel.icon
+                  size={18}
+                  className="text-signal"
+                  strokeWidth={1.75}
+                />
                 <div>
                   <div className="font-mono text-[11px] uppercase tracking-widest2 text-ink-faint">
                     {channel.label}

@@ -49,10 +49,6 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Plataformas",
-    items: [
-      "WordPress",
-      "VTEX",
-      "E-commerce",
-    ],
+    items: ["WordPress", "VTEX", "E-commerce"],
   },
 ];

@@ -4,7 +4,8 @@
 export const profile = {
   name: "Marllon Panisset",
   role: "Analista de Suporte Técnico",
-  roleSecondary: "Infraestrutura | Sustentação de Aplicações | Desenvolvimento Front-End",
+  roleSecondary:
+    "Infraestrutura | Sustentação de Aplicações | Desenvolvimento Front-End",
   tagline:
     "Profissional de TI com 11 anos de experiência em ambientes corporativos, atuando com suporte técnico N1/N2, infraestrutura, manutenção de estações, redes, sistemas operacionais e sustentação de aplicações.",
   location: "Rio de Janeiro, Brasil",

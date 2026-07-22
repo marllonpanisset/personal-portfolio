@@ -71,10 +71,7 @@ export function About() {
 
               <ul className="mt-4 space-y-4 border-l border-base-border pl-5">
                 {about.focusAreas.map((area) => (
-                  <li
-                    key={area}
-                    className="text-sm leading-relaxed text-ink"
-                  >
+                  <li key={area} className="text-sm leading-relaxed text-ink">
                     {area}
                   </li>
                 ))}
