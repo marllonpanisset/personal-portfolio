@@ -17,7 +17,7 @@ const links = [
 
 const socialLinks = [
   { href: "https://github.com/marllonpanisset", label: "GitHub", icon: Github },
-  { href: "https://linkedin.com/in/marllonpanisset", label: "LinkedIn", icon: Linkedin },
+  { href: "https://linkedin.com/in/marllon-panisset", label: "LinkedIn", icon: Linkedin },
   { href: "mailto:marllon.web@gmail.com", label: "Email", icon: Mail },
 ];
 

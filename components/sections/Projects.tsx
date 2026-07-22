@@ -71,22 +71,27 @@ export function Projects() {
                 >
 
                   {project.image && (
-                    <div className="
-                      relative
-                      aspect-video
-                      overflow-hidden
-                      border-b
-                      border-base-border
-                    ">
+                    <div
+                      className="
+                        relative
+                        aspect-video
+                        overflow-hidden
+                        border-b
+                        border-base-border
+                      "
+                    >
                       <Image
                         src={project.image}
                         alt={project.name}
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="
                           object-cover
-                          transition-transform
+                          opacity-80
+                          transition-opacity
                           duration-500
-                          group-hover:scale-105
+                          ease-out
+                          group-hover:opacity-100
                         "
                       />
                     </div>
