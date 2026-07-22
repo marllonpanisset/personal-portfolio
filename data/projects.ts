@@ -1,6 +1,6 @@
 // Projetos apresentados no portfólio.
-// Cada projeto possui informações resumidas para cards
-// e informações completas utilizadas nas páginas individuais.
+// Estudos, experimentos e aplicações desenvolvidas
+// durante minha trajetória em tecnologia.
 
 export type Project = {
   slug: string;
@@ -71,72 +71,61 @@ export const projects: Project[] = [
       "https://marllon.netlify.app",
   },
   {
-    slug: "brototec",
+  slug: "brototec",
 
-    name: "Brototec",
+  name: "Brototec",
 
-    category: "Conceito de Produto Digital",
+  category: "Projeto Experimental",
 
-    description:
-      "Conceito de plataforma digital desenvolvido para explorar autonomia, propriedade e construção de ativos digitais para pequenos negócios.",
+  description:
+    "Experimento de posicionamento digital e construção de uma identidade visual para explorar conceitos de produto, interface e experiência do usuário.",
 
-    image:
-      "/projects/brototec.png",
+  longDescription:
+    "Projeto experimental criado para estudar como uma marca digital poderia ser estruturada do zero, explorando identidade visual, arquitetura de informação, design de interfaces e desenvolvimento Front-End.",
 
-    longDescription:
-      "A Brototec foi um projeto experimental de posicionamento e construção de uma solução digital própria, explorando como tecnologia poderia ser utilizada para criar estruturas digitais mais independentes, transparentes e personalizadas para negócios.",
+  problem:
+    "Explorar na prática como transformar uma ideia abstrata em uma experiência digital completa, passando por estratégia, design e implementação.",
 
-    problem:
-      "Muitos negócios dependem de plataformas fechadas e soluções terceirizadas onde possuem pouco controle sobre seus dados, estrutura digital e evolução futura.",
+  solution:
+    "Desenvolvimento de uma interface completa utilizando Next.js, criando páginas, componentes reutilizáveis e uma experiência visual focada em clareza e usabilidade.",
 
-    solution:
-      "Foi desenvolvida uma proposta de ecossistema digital baseado em interfaces personalizadas, estruturas de conteúdo gerenciáveis e entrega de ativos digitais próprios, explorando conceitos de autonomia, performance e experiência do usuário.",
+  highlights: [
+    "Criação de identidade e conceito visual",
+    "Arquitetura de páginas e experiência do usuário",
+    "Desenvolvimento Front-End completo",
+    "Componentização utilizando Next.js",
+    "Estudo de posicionamento de produto digital",
+  ],
 
-    highlights: [
-      "Definição de posicionamento e proposta de valor",
-      "Arquitetura completa de informações e páginas",
-      "Criação de identidade visual e experiência digital",
-      "Estruturação de soluções digitais orientadas a negócio",
-      "Desenvolvimento de interface responsiva utilizando Next.js",
-    ],
+  image:
+    "/projects/brototec.png",
 
-    stack: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "UX/UI Design",
-      "Vercel",
-    ],
-
-    github:
-      "https://github.com/marllonpanisset/brototec",
-
-    demo:
-      "https://brototec.vercel.app",
+  stack: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "UX/UI Design",
+    "Vercel",
+  ],
   },
   {
     slug: "pousada-profissional",
 
     name: "Pousada Profissional",
 
-    category: "Produto Digital",
-
+    category: "Estudo de Produto Digital",
 
     description:
-      "Site modelo para pousadas com apresentação de acomodações, páginas dinâmicas e contato direto via WhatsApp.",
-
+      "Protótipo de plataforma digital para o segmento de hospedagem, desenvolvido para explorar experiência do usuário, páginas dinâmicas e apresentação de serviços.",
 
     longDescription:
-      "Projeto desenvolvido como demonstração de uma solução digital para o segmento de hospedagem, permitindo apresentar acomodações, informações da pousada e facilitar o contato com hóspedes.",
-
+      "Projeto experimental criado para estudar como uma solução digital poderia ser estruturada para pequenos negócios do setor de hospedagem, explorando arquitetura de informação, componentes reutilizáveis e experiência de navegação.",
 
     problem:
-      "Pequenas pousadas muitas vezes dependem exclusivamente de plataformas externas e não possuem um canal próprio profissional para apresentar seus serviços.",
-
+      "Estudar como organizar informações de um negócio real em uma interface digital clara, responsiva e fácil de utilizar.",
 
     solution:
-      "Criação de um site responsivo utilizando páginas dinâmicas, componentes reutilizáveis e integração com WhatsApp para facilitar solicitações de reservas.",
-
+      "Construção de um protótipo utilizando Next.js com páginas dinâmicas, componentes reutilizáveis e estrutura preparada para diferentes conteúdos.",
 
     highlights: [
       "Rotas dinâmicas utilizando Next.js",
