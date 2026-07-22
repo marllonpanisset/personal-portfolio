@@ -5,7 +5,7 @@ import {
   ExternalLink,
   Github,
 } from "lucide-react";
-
+import Image from "next/image";
 import { Nav } from "@/components/navigation/Nav";
 import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
@@ -173,11 +173,16 @@ export default function ProjectPage({
                 border
                 border-base-border
               ">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="w-full"
-                />
+                <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-base-border">
+                    <Image
+                        src={project.image}
+                        alt={project.name}
+                        fill
+                        priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                        className="object-cover"
+                    />
+                </div>
               </div>
             )}
 
