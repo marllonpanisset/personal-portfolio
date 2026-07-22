@@ -13,7 +13,7 @@ export const profile = {
   links: {
     linkedin: "https://www.linkedin.com/in/marllon-panisset",
     github: "https://github.com/marllonpanisset",
-    resume: "/marllon-panisset-curriculo.pdf",
+    resume: "/cv.pdf",
     email: "mailto:marllon.web@gmail.com",
     whatsapp: "https://wa.me/5521987881633",
   },
