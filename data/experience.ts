@@ -17,24 +17,27 @@ export const experience: ExperienceItem[] = [
     period: "Jun 2022 — Dez 2022",
     location: "Rio de Janeiro, RJ",
     description:
-      "Atuação na sustentação de páginas web em ambiente de produção, realizando manutenção, correções de incidentes e publicação de atualizações.",
+      "Atuação na sustentação e manutenção de páginas web em ambiente de produção utilizando arquitetura estática com Hugo, realizando diagnóstico de falhas, correções e suporte às demandas relacionadas à publicação e estabilidade das aplicações.",
     highlights: [
-      "Diagnóstico e correção de problemas em aplicações web",
-      "Manutenção de conteúdos e páginas em produção",
-      "Versionamento e controle de código utilizando Git",
+      "Sustentação de aplicações web em ambiente produtivo",
+      "Diagnóstico e correção de falhas visando continuidade operacional",
+      "Controle de versões utilizando Git",
+      "Gerenciamento e organização de conteúdos em CMS privado",
     ],
   },
   {
     company: "ED3 Digital",
-    role: "Desenvolvedor Front-End",
+    role: "Desenvolvedor Front-End (VTEX)",
     period: "Ago 2020 — Abr 2022",
     location: "Rio de Janeiro, RJ",
     description:
-      "Sustentação de e-commerces em produção na plataforma VTEX, atuando na investigação de incidentes e manutenção evolutiva.",
+      "Atuação na sustentação técnica de e-commerces em produção utilizando plataforma VTEX IO e Legacy, realizando troubleshooting, análise de incidentes e manutenção evolutiva das aplicações.",
     highlights: [
-      "Troubleshooting utilizando DevTools",
-      "Análise de integrações e comportamento das aplicações",
-      "Correções evolutivas em ambientes produtivos",
+      "Sustentação de mais de 10 e-commerces em ambiente produtivo",
+      "Troubleshooting de funcionalidades, integrações e comportamento da aplicação",
+      "Diagnóstico de falhas funcionais e análise de causa",
+      "Desenvolvimento e manutenção de componentes Front-End utilizando Git",
+      "Atuação integrada com equipes técnicas e áreas de negócio",
     ],
   },
   {
@@ -43,11 +46,12 @@ export const experience: ExperienceItem[] = [
     period: "Jun 2019 — Mar 2020",
     location: "Rio de Janeiro, RJ",
     description:
-      "Desenvolvimento e sustentação de aplicações web, atuando na correção de bugs e evolução de funcionalidades.",
+      "Atuação no desenvolvimento e sustentação de sistema de biblioteca virtual em produção, realizando correções, manutenção evolutiva e implementação de novas funcionalidades.",
     highlights: [
-      "Manutenção de sistemas web em produção",
-      "Investigação de problemas funcionais",
-      "Versionamento utilizando Git",
+      "Troubleshooting e correção de bugs em aplicações web",
+      "Manutenção contínua de sistema em ambiente produtivo",
+      "Implementação de funcionalidades com integração a banco de dados",
+      "Análise de problemas funcionais e apoio na estabilidade da plataforma",
     ],
   },
   {
@@ -56,24 +60,28 @@ export const experience: ExperienceItem[] = [
     period: "Jun 2016 — Mai 2019",
     location: "Rio de Janeiro, RJ",
     description:
-      "Desenvolvimento, manutenção e sustentação de sites institucionais, intranets e plataformas web.",
+      "Atuação no desenvolvimento, sustentação e evolução de sites, sistemas e plataformas digitais para diferentes clientes, participando desde a implementação até a manutenção de aplicações em produção.",
     highlights: [
-      "Desenvolvimento com React, WordPress e Drupal",
-      "Melhorias de usabilidade, responsividade e desempenho",
-      "Participação em projetos digitais de grande acesso",
+      "Desenvolvimento e manutenção de sites, intranets e plataformas web",
+      "Diagnóstico e resolução de incidentes utilizando React, WordPress e Drupal",
+      "Correção de bugs e implementação de melhorias evolutivas",
+      "Versionamento utilizando Git e atuação em equipes multidisciplinares",
+      "Participação no projeto 'Tô de Love no Trem', plataforma digital de alta escala",
     ],
   },
   {
     company: "Hospital Riomar Barra",
-    role: "Técnico de Informática N1/N2",
-    period: "Ago 2011 — Mai 2016",
+    role: "Técnico de Suporte de Informática N1/N2",
+    period: "Ago 2011 — Jan 2016",
     location: "Rio de Janeiro, RJ",
     description:
-      "Suporte técnico em ambiente hospitalar crítico, atendendo usuários administrativos e assistenciais.",
+      "Atuação em suporte técnico N1/N2 em ambiente hospitalar de alta criticidade, realizando atendimento aos usuários, manutenção de equipamentos, configuração de sistemas e suporte à infraestrutura local.",
     highlights: [
-      "Manutenção de hardware, sistemas operacionais e softwares corporativos",
-      "Suporte a redes locais e resolução de incidentes",
-      "Gestão de chamados com foco em continuidade operacional",
+      "Instalação, configuração e manutenção de computadores, impressoras e sistemas Windows/Linux",
+      "Diagnóstico e resolução de incidentes de hardware, software e conectividade",
+      "Administração e troubleshooting de redes locais cabeadas e Wi-Fi",
+      "Criação de usuários, permissões e compartilhamentos de rede",
+      "Atendimento direto aos usuários garantindo continuidade operacional",
     ],
   },
 ];
