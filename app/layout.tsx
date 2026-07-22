@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+
 import "./globals.css";
+
 import { profile } from "@/data/profile";
+
+import { Nav } from "@/components/navigation/Nav";
+import { Footer } from "@/components/sections/Footer";
+
 
 const display = Space_Grotesk({
   subsets: ["latin"],
@@ -10,12 +17,14 @@ const display = Space_Grotesk({
   display: "swap",
 });
 
+
 const body = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-body",
   display: "swap",
 });
+
 
 const mono = JetBrains_Mono({
   subsets: ["latin"],
@@ -24,15 +33,20 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://marllonpanisset.com"; // ajuste para o domínio real ao publicar
+
+const siteUrl = "https://marllon.netlify.app";
+
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+
   title: {
     default: `${profile.name} — ${profile.role} & ${profile.roleSecondary}`,
     template: `%s — ${profile.name}`,
   },
+
   description: profile.tagline,
+
   keywords: [
     "Analista de Suporte Técnico",
     "Application Support",
@@ -40,9 +54,19 @@ export const metadata: Metadata = {
     "Suporte N1 N2",
     "Troubleshooting",
     "Marllon Panisset",
+    "Cyber Security",
+    "Desenvolvimento Web",
   ],
-  authors: [{ name: profile.name }],
+
+  authors: [
+    {
+      name: profile.name,
+    },
+  ],
+
   creator: profile.name,
+
+
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -51,28 +75,54 @@ export const metadata: Metadata = {
     description: profile.tagline,
     siteName: profile.name,
   },
+
+
   twitter: {
     card: "summary_large_image",
     title: `${profile.name} — ${profile.role} & ${profile.roleSecondary}`,
     description: profile.tagline,
   },
+
+
   icons: {
     icon: "/favicon.svg",
   },
+
+
   robots: {
     index: true,
     follow: true,
   },
 };
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
-    <html lang="pt-BR" className={`${display.variable} ${body.variable} ${mono.variable}`}>
-      <body>{children}</body>
+
+    <html
+      lang="pt-BR"
+      className={`${display.variable} ${body.variable} ${mono.variable}`}
+    >
+
+      <body>
+
+        <Nav />
+
+        {children}
+
+        <Footer />
+
+      </body>
+
     </html>
+
   );
+
 }
