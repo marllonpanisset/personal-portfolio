@@ -40,22 +40,43 @@ export const metadata: Metadata = {
     template: `%s — ${profile.name}`,
   },
 
-  description: profile.tagline,
+  description:
+    "Portfólio profissional com projetos, estudos e artigos sobre tecnologia, desenvolvimento, suporte de aplicações e evolução na carreira de TI.",
+
+  category: "technology",
+
+  alternates: {
+    canonical: siteUrl,
+  },
 
   keywords: [
-    "Analista de Suporte Técnico",
-    "Application Support",
-    "Sustentação de Aplicações",
-    "Suporte N1 N2",
-    "Troubleshooting",
     "Marllon Panisset",
-    "Cyber Security",
+    "Tecnologia",
     "Desenvolvimento Web",
+    "Desenvolvedor Web",
+    "Desenvolvedor Front-End",
+    "Front-End Developer",
+    "Front-End",
+    "Desenvolvimento de Aplicações Web",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Python",
+    "SQL",
+    "Application Support",
+    "Suporte de Aplicações",
+    "Suporte N1 N2",
+    "Sustentação de Sistemas",
+    "Troubleshooting",
+    "Infraestrutura",
+    "Carreira em Tecnologia",
+    "Projetos de Tecnologia",
   ],
 
   authors: [
     {
       name: profile.name,
+      url: siteUrl,
     },
   ],
 
@@ -65,15 +86,33 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
+
     title: `${profile.name} — ${profile.role} & ${profile.roleSecondary}`,
-    description: profile.tagline,
+
+    description:
+      "Projetos, estudos e artigos sobre tecnologia, desenvolvimento, suporte de aplicações e minha evolução profissional.",
+
     siteName: profile.name,
+
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: `${profile.name} — Tecnologia e Desenvolvimento`,
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
+
     title: `${profile.name} — ${profile.role} & ${profile.roleSecondary}`,
-    description: profile.tagline,
+
+    description:
+      "Projetos, estudos e artigos sobre tecnologia, desenvolvimento e evolução profissional.",
+
+    images: ["/og-image.png"],
   },
 
   icons: {
