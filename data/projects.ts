@@ -26,24 +26,24 @@ export const projects: Project[] = [
     category: "Projeto Pessoal",
 
     description:
-      "Portfólio e blog desenvolvidos para apresentar minha trajetória em tecnologia, compartilhar conhecimentos e reunir projetos em um único lugar.",
+      "Aplicação web desenvolvida para apresentar minha trajetória profissional, projetos técnicos e compartilhar conteúdos sobre tecnologia através de um blog integrado.",
 
     longDescription:
-      "Aplicação desenvolvida para consolidar minha presença profissional na área de tecnologia, reunindo experiências, projetos e um blog onde documento estudos, aprendizados e minha evolução em desenvolvimento, suporte, sistemas e segurança da informação.",
+      "Aplicação desenvolvida em Next.js para consolidar minha presença profissional na área de tecnologia, reunindo experiências, projetos, tecnologias utilizadas e um sistema de blog onde compartilho estudos, aprendizados e evolução profissional.",
 
     problem:
-      "Criar uma plataforma que fosse além de um currículo tradicional, permitindo apresentar minha experiência profissional, centralizar projetos e compartilhar conhecimento através de um blog técnico.",
+      "Criar uma plataforma profissional que fosse além de um currículo tradicional, permitindo demonstrar experiência técnica, apresentar projetos desenvolvidos e documentar conhecimentos adquiridos durante minha trajetória.",
 
     solution:
-      "Desenvolvimento de uma aplicação utilizando Next.js App Router com arquitetura modular, componentes reutilizáveis, sistema de blog em MDX, foco em performance, SEO, responsividade e experiência do usuário.",
+      "Desenvolvimento de uma aplicação utilizando Next.js App Router, arquitetura modular, componentes reutilizáveis, blog em MDX, otimização para SEO, responsividade e foco em experiência do usuário.",
 
     highlights: [
-      "Portfólio profissional integrado ao blog",
-      "Sistema de blog com MDX",
-      "Arquitetura utilizando Next.js App Router",
-      "Componentização e organização modular",
-      "Design responsivo com foco em UX",
-      "SEO e geração dinâmica de páginas",
+      "Aplicação web desenvolvida com Next.js App Router",
+      "Portfólio profissional integrado ao sistema de blog",
+      "Blog utilizando MDX para criação de conteúdos técnicos",
+      "Arquitetura baseada em componentes reutilizáveis",
+      "Design responsivo e otimizado para experiência do usuário",
+      "Estrutura preparada para evolução contínua",
     ],
 
     image: "/projects/portfolio.png",
@@ -54,6 +54,7 @@ export const projects: Project[] = [
 
     demo: "https://marllon.netlify.app",
   },
+
   {
     slug: "brototec",
 
@@ -62,29 +63,30 @@ export const projects: Project[] = [
     category: "Projeto Experimental",
 
     description:
-      "Experimento de posicionamento digital e construção de uma identidade visual para explorar conceitos de produto, interface e experiência do usuário.",
+      "Projeto experimental de produto digital desenvolvido para explorar criação de interfaces, arquitetura de aplicações e experiência do usuário.",
 
     longDescription:
-      "Projeto experimental criado para estudar como uma marca digital poderia ser estruturada do zero, explorando identidade visual, arquitetura de informação, design de interfaces e desenvolvimento Front-End.",
+      "Projeto criado para estudar o desenvolvimento de uma solução digital completa, explorando desde a definição da proposta até a implementação Front-End, organização de componentes e construção de uma experiência de navegação consistente.",
 
     problem:
-      "Explorar na prática como transformar uma ideia abstrata em uma experiência digital completa, passando por estratégia, design e implementação.",
+      "Transformar uma ideia de produto digital em uma aplicação estruturada, aplicando conceitos de desenvolvimento, interface e organização de software.",
 
     solution:
-      "Desenvolvimento de uma interface completa utilizando Next.js, criando páginas, componentes reutilizáveis e uma experiência visual focada em clareza e usabilidade.",
+      "Desenvolvimento de uma aplicação utilizando Next.js com componentes reutilizáveis, estrutura escalável e foco em boas práticas de desenvolvimento Front-End.",
 
     highlights: [
-      "Criação de identidade e conceito visual",
-      "Arquitetura de páginas e experiência do usuário",
-      "Desenvolvimento Front-End completo",
-      "Componentização utilizando Next.js",
-      "Estudo de posicionamento de produto digital",
+      "Desenvolvimento completo da interface Front-End",
+      "Criação de componentes reutilizáveis",
+      "Organização de arquitetura utilizando Next.js",
+      "Aplicação de conceitos de UX/UI",
+      "Estudo de produto digital e experiência do usuário",
     ],
 
     image: "/projects/brototec.png",
 
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "UX/UI Design", "Vercel"],
   },
+
   {
     slug: "pousada-profissional",
 
@@ -93,22 +95,23 @@ export const projects: Project[] = [
     category: "Estudo de Produto Digital",
 
     description:
-      "Protótipo de plataforma digital para o segmento de hospedagem, desenvolvido para explorar experiência do usuário, páginas dinâmicas e apresentação de serviços.",
+      "Protótipo de plataforma digital para hospedagem desenvolvido para explorar aplicações web, páginas dinâmicas e experiência de usuário.",
 
     longDescription:
-      "Projeto experimental criado para estudar como uma solução digital poderia ser estruturada para pequenos negócios do setor de hospedagem, explorando arquitetura de informação, componentes reutilizáveis e experiência de navegação.",
+      "Projeto desenvolvido para estudar a criação de uma solução digital para pequenos negócios, explorando estrutura de páginas, componentes reutilizáveis, apresentação de informações e organização de conteúdo através de uma aplicação moderna.",
 
     problem:
-      "Estudar como organizar informações de um negócio real em uma interface digital clara, responsiva e fácil de utilizar.",
+      "Criar uma experiência digital capaz de apresentar serviços, informações e conteúdos de forma organizada, responsiva e preparada para crescimento.",
 
     solution:
-      "Construção de um protótipo utilizando Next.js com páginas dinâmicas, componentes reutilizáveis e estrutura preparada para diferentes conteúdos.",
+      "Construção de uma aplicação utilizando Next.js com rotas dinâmicas, componentes reutilizáveis e arquitetura preparada para diferentes tipos de conteúdo.",
 
     highlights: [
-      "Rotas dinâmicas utilizando Next.js",
-      "Estrutura preparada para múltiplas acomodações",
+      "Aplicação desenvolvida com Next.js",
+      "Criação de páginas dinâmicas",
       "Componentização reutilizável",
-      "Foco em conversão e experiência do usuário",
+      "Estrutura preparada para múltiplos conteúdos",
+      "Foco em experiência do usuário e conversão",
     ],
 
     image: "/projects/pousada-profissional.png",
@@ -125,6 +128,7 @@ export const projects: Project[] = [
 
     demo: "https://pousada-profissional.netlify.app/",
   },
+
   {
     slug: "dashboard-interativo-de-salarios",
 
@@ -133,22 +137,22 @@ export const projects: Project[] = [
     category: "Data Science",
 
     description:
-      "Dashboard desenvolvido com Python para análise e visualização de dados salariais utilizando gráficos interativos.",
+      "Dashboard desenvolvido com Python para análise e visualização de dados através de uma aplicação interativa.",
 
     longDescription:
-      "Projeto desenvolvido durante estudos de Data Science com objetivo de transformar uma base de dados em uma aplicação visual interativa, permitindo exploração através de filtros e gráficos.",
+      "Projeto desenvolvido durante estudos de Data Science com objetivo de transformar uma base de dados em uma aplicação visual, permitindo análise de informações através de filtros, gráficos e indicadores interativos.",
 
     problem:
-      "Dados brutos possuem pouco valor quando não são tratados e apresentados de forma clara para análise.",
+      "Transformar dados brutos em informações úteis através de uma interface que facilite exploração e interpretação dos resultados.",
 
     solution:
-      "Construção de um dashboard utilizando Python para tratamento, análise e visualização de dados através de uma interface interativa.",
+      "Desenvolvimento de um dashboard utilizando Python para tratamento, análise e visualização de dados, criando uma experiência interativa para exploração das informações.",
 
     highlights: [
-      "Manipulação e tratamento de dados",
-      "Criação de gráficos interativos",
+      "Tratamento e análise de dados utilizando Python",
+      "Criação de gráficos e visualizações interativas",
+      "Construção de aplicação utilizando Streamlit",
       "Aplicação prática de conceitos de Data Science",
-      "Desenvolvimento utilizando Python",
     ],
 
     image: "/projects/dashboard-salarios.png",

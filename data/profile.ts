@@ -3,14 +3,20 @@
 
 export const profile = {
   name: "Marllon Panisset",
-  role: "Analista de Suporte Técnico",
-  roleSecondary:
-    "Infraestrutura | Sustentação de Aplicações | Desenvolvimento Front-End",
+
+  role: "Desenvolvedor Front-End",
+
+  roleSecondary: "Analista de Suporte Técnico",
+
   tagline:
-    "Profissional de TI com 11 anos de experiência em ambientes corporativos, atuando com suporte técnico N1/N2, infraestrutura, manutenção de estações, redes, sistemas operacionais e sustentação de aplicações.",
+    "Profissional de TI com experiência em desenvolvimento Front-End e suporte técnico, atuando com React, Next.js, TypeScript, troubleshooting e resolução de problemas em ambientes corporativos.",
+
   location: "Rio de Janeiro, Brasil",
+
   yearsOfExperience: 11,
+
   status: "open_to_work",
+
   links: {
     linkedin: "https://www.linkedin.com/in/marllon-panisset",
     github: "https://github.com/marllonpanisset",
@@ -22,19 +28,19 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "Minha trajetória em TI começou no suporte técnico corporativo, atuando na preparação e manutenção de estações de trabalho, montagem de computadores, instalação e configuração de sistemas Windows, rotinas de backup, compartilhamentos de rede e controle de usuários e permissões de acesso.",
+    "Sou profissional de Tecnologia da Informação com experiência em desenvolvimento Front-End e suporte técnico, atuando na criação de aplicações web, resolução de problemas e melhoria da experiência dos usuários.",
 
-    "Essa experiência me proporcionou uma base sólida em infraestrutura, permitindo atuar no suporte N1/N2, atendimento aos usuários, troubleshooting de hardware e software, análise de incidentes, priorização de demandas e resolução de problemas com foco na continuidade operacional dos ambientes.",
+    "Ao longo da carreira, desenvolvi aplicações web utilizando tecnologias como React, Next.js, JavaScript e TypeScript, criando interfaces modernas, responsivas e focadas em experiência do usuário.",
 
-    "Ao longo da carreira, ampliei minha atuação para ambientes web, unindo conhecimentos de suporte e desenvolvimento para realizar análises de problemas em aplicações, investigação de falhas, validações em produção, inspeção utilizando ferramentas de navegador e colaboração com equipes técnicas.",
+    "Minha trajetória também inclui experiência em suporte técnico corporativo, onde desenvolvi uma base sólida em infraestrutura, sistemas operacionais, troubleshooting de hardware e software, atendimento a usuários e análise de incidentes.",
 
-    "Minha experiência anterior como Desenvolvedor Front-End complementa minha atuação em suporte e sustentação, proporcionando uma visão mais completa do ciclo de vida das aplicações, desde o desenvolvimento até a operação, facilitando a comunicação entre suporte, desenvolvimento, infraestrutura e áreas de negócio.",
+    "A combinação entre desenvolvimento e suporte me permite enxergar tecnologia de forma mais completa, entendendo tanto a construção das aplicações quanto os desafios encontrados durante sua utilização e operação em ambientes reais.",
   ],
 
   focusAreas: [
-    "Suporte técnico N1/N2 e tratamento de incidentes",
-    "Infraestrutura, redes TCP/IP e sistemas operacionais",
-    "Sustentação e troubleshooting de aplicações",
-    "Análise de problemas e causa raiz",
+    "Desenvolvimento Front-End com React, Next.js e TypeScript",
+    "Criação de interfaces modernas e aplicações web",
+    "Suporte técnico N1/N2 e troubleshooting",
+    "Infraestrutura, sistemas operacionais e melhoria contínua",
   ],
 } as const;
