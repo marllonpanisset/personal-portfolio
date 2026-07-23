@@ -1,5 +1,3 @@
-import { Footer } from "@/components/sections/Footer";
-
 import { Nav } from "@/components/navigation/Nav";
 import { Container } from "@/components/ui/Container";
 import { Projects } from "@/components/sections/Projects";
