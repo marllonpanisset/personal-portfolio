@@ -48,6 +48,10 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
+    label: "Qualidade & Testes",
+    items: ["Testes automatizados", "Vitest", "React Testing Library"],
+  },
+  {
     label: "Plataformas",
     items: ["WordPress", "VTEX", "E-commerce"],
   },
