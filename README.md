@@ -1,79 +1,78 @@
 # Marllon Panisset — Portfólio Profissional
 
-Site pessoal de **Marllon Panisset**, Analista de Suporte Técnico e
-Application Support, com 11 anos de experiência em suporte técnico,
-infraestrutura e sustentação de aplicações web em produção.
+Portfólio profissional de Marllon Panisset, profissional de tecnologia
+com experiência em desenvolvimento web, suporte técnico, infraestrutura
+e sustentação de aplicações em produção.
 
-Design minimalista e premium, inspirado em Vercel, Linear e Stripe —
-fundo escuro, tipografia forte, muito espaço em branco e animações
-discretas de entrada.
+O projeto reúne minha trajetória profissional, competências técnicas,
+projetos pessoais e estudos contínuos em tecnologia.
+
+O projeto foi desenvolvido com foco em performance, acessibilidade,
+organização de código e uma experiência de navegação simples e objetiva.
 
 ## Stack
 
-- [Next.js 14](https://nextjs.org/) (App Router)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/) — animações de entrada e transições
-- [Lucide React](https://lucide.dev/) — ícones
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion — animações e transições
+- Lucide React — ícones
+- MDX — artigos do blog
+- Vitest + React Testing Library — testes automatizados
 
-## Estrutura do projeto
+## Funcionalidades
 
-```
-app/
-  layout.tsx        # Layout raiz, fontes e metadata de SEO
-  page.tsx           # Composição das seções da landing page
-  globals.css         # Tailwind + estilos base
+- Landing page profissional
+- Blog com artigos em MDX
+- SEO técnico utilizando Metadata API do Next.js
+- Listagem de projetos
+- Navegação responsiva
+- Componentes reutilizáveis
+- Testes automatizados
+- Deploy contínuo
 
-components/
-  Nav.tsx             # Navegação fixa
-  Hero.tsx            # Seção de abertura
-  About.tsx           # Seção "Sobre"
-  Experience.tsx       # Timeline profissional
-  Skills.tsx           # Competências (tags)
-  Projects.tsx          # Grade de projetos (com estado vazio)
-  Contact.tsx           # Canais de contato
-  Footer.tsx            # Rodapé
-  ui/
-    Container.tsx        # Wrapper de largura máxima e padding
-    SectionLabel.tsx       # Eyebrow numerado usado em cada seção
+## Arquitetura do projeto
 
-data/
-  profile.ts           # Nome, cargo, bio, links de contato
-  experience.ts         # Itens da timeline profissional
-  skills.ts              # Grupos de competências
-  projects.ts              # Lista de projetos (vazia por padrão)
+O projeto utiliza uma arquitetura baseada em componentes React,
+separação de responsabilidades e organização modular.
 
-lib/
-  animations.ts          # Variants reutilizáveis do Framer Motion
+Principais conceitos aplicados:
 
-public/
-  favicon.svg              # Favicon do site
-```
+- Componentes reutilizáveis
+- Separação entre dados e apresentação
+- Organização por domínio
+- Tipagem com TypeScript
+- Conteúdo gerenciado separadamente da interface
+- SEO utilizando Metadata API do Next.js
+- Testes automatizados com Vitest e React Testing Library
+
+A estrutura foi pensada para facilitar manutenção, evolução e
+escalabilidade do projeto ao longo do tempo.
+
+## Testes
+
+O projeto possui testes automatizados para garantir estabilidade dos
+componentes e páginas principais.
+
+Ferramentas utilizadas:
+
+- Vitest
+- React Testing Library
+- Coverage V8
+
+Os testes cobrem componentes, páginas, dados e funções auxiliares.
 
 ## Editando o conteúdo
 
 Todo o conteúdo textual fica isolado em `data/`, então **não é necessário
 mexer nos componentes para atualizar informações**:
 
-| Arquivo | O que editar |
-|---|---|
-| `data/profile.ts` | Nome, cargo, descrição, links (LinkedIn, GitHub, e-mail, WhatsApp) e caminho do currículo em PDF |
-| `data/experience.ts` | Empresas, cargos, períodos e descrições da timeline |
-| `data/skills.ts` | Grupos e tags de competências |
-| `data/projects.ts` | Projetos exibidos na seção "Projetos" (a seção mostra um estado vazio até o primeiro item ser adicionado) |
-
-### Adicionando o currículo em PDF
-
-Coloque o arquivo em `public/` (por exemplo,
-`public/marllon-panisset-curriculo.pdf`) e ajuste o campo
-`links.resume` em `data/profile.ts` para apontar para esse caminho.
-
-### Ajustando os períodos da timeline
-
-Os períodos em `data/experience.ts` estão marcados com comentários
-`// ajuste conforme período real` — atualize as datas exatas de cada
-experiência (Hospital Riomar Barra, Sirius Interativa, AM4, ED3
-Digital, Grupo Binaria) conforme os registros reais.
+| Arquivo              | O que editar                                                                                              |
+| -------------------- | --------------------------------------------------------------------------------------------------------- |
+| `data/profile.ts`    | Nome, cargo, descrição, links (LinkedIn, GitHub, e-mail, WhatsApp) e caminho do currículo em PDF          |
+| `data/experience.ts` | Empresas, cargos, períodos e descrições da timeline                                                       |
+| `data/skills.ts`     | Grupos e tags de competências                                                                             |
+| `data/projects.ts`   | Projetos exibidos na seção "Projetos" (a seção mostra um estado vazio até o primeiro item ser adicionado) |
 
 ## Rodando localmente
 
@@ -91,25 +90,21 @@ npm run build
 npm start
 ```
 
-## Deploy na Vercel
+## Deploy
 
-1. Suba o projeto para um repositório no GitHub.
-2. Em [vercel.com/new](https://vercel.com/new), importe o repositório.
-3. A Vercel detecta o Next.js automaticamente — nenhuma configuração
-   adicional é necessária.
-4. (Opcional) Configure um domínio próprio em **Settings → Domains**.
+O projeto possui deploy automatizado integrado ao repositório Git,
+permitindo publicação contínua a cada atualização validada.
 
-## Notas de design
+## Objetivo
 
-- **Paleta:** fundo `#0B0E14` (slate quase preto), superfícies em
-  `#12161F`, bordas hairline em `#20242F`, texto em `#E7EAF1`/`#8A93A6`
-  e acento `#4FD1C5` — um teal que remete a "status operacional",
-  coerente com o universo de monitoramento e suporte técnico.
-- **Tipografia:** Space Grotesk (display), Inter (corpo de texto) e
-  JetBrains Mono (rótulos, tags e metadados) — a fonte monoespaçada
-  reforça o vocabulário técnico do perfil (logs, terminais, status).
-- **Elemento de assinatura:** a faixa de status no Hero (`status:
-  disponível para novas oportunidades`) e o indicador pulsante retomam,
-  de forma discreta, a linguagem de monitoramento de sistemas que é o
-  dia a dia do profissional — sem repetir o efeito em excesso pelo
-  resto da página.
+Este projeto foi criado para centralizar minha presença profissional,
+documentar minha evolução em tecnologia e apresentar projetos,
+experiências e aprendizados durante minha trajetória profissional.
+
+## Autor
+
+Marllon Panisset
+
+GitHub: https://github.com/marllonpanisset
+LinkedIn: https://linkedin.com/in/marllonpanisset
+Portfólio: https://marllon.netlify.app
