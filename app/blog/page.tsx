@@ -8,11 +8,12 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import BlogPagination from "@/components/blog/BlogPagination";
+import { profile } from "@/data/profile";
 
 export const metadata: Metadata = {
-  title: "Blog | Marllon Panisset",
+  title: "Blog",
   description:
-    "Artigos sobre tecnologia, desenvolvimento, cyber security, carreira e aprendizados durante minha evolução profissional.",
+    "Artigos sobre tecnologia, desenvolvimento, carreira e aprendizados durante minha evolução profissional.",
 };
 
 type Props = {

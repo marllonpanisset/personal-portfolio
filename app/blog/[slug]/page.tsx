@@ -33,8 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${post.title} | Marllon Panisset`,
-
+    title: post.title,
     description: post.excerpt,
   };
 }
