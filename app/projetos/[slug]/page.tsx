@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
+
 import { Nav } from "@/components/navigation/Nav";
 import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
@@ -50,39 +51,39 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             <header className="mt-10">
               <p
                 className="
-                font-mono
-                text-xs
-                uppercase
-                tracking-widest2
-                text-ink-faint
-              "
+                  font-mono
+                  text-xs
+                  uppercase
+                  tracking-widest2
+                  text-ink-faint
+                "
               >
-                Projeto
+                Aplicação
               </p>
 
               <h1
                 className="
-                mt-4
-                max-w-4xl
-                font-display
-                text-4xl
-                font-semibold
-                leading-tight
-                text-ink
-                md:text-6xl
-              "
+                  mt-4
+                  max-w-4xl
+                  font-display
+                  text-4xl
+                  font-semibold
+                  leading-tight
+                  text-ink
+                  md:text-6xl
+                "
               >
                 {project.name}
               </h1>
 
               <p
                 className="
-                mt-6
-                max-w-3xl
-                text-lg
-                leading-relaxed
-                text-ink-muted
-              "
+                  mt-6
+                  max-w-3xl
+                  text-lg
+                  leading-relaxed
+                  text-ink-muted
+                "
               >
                 {project.description}
               </p>
@@ -138,17 +139,15 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </header>
 
-            {/* IMAGEM FUTURA */}
-
             {project.image && (
               <div
                 className="
-                mt-16
-                overflow-hidden
-                rounded-lg
-                border
-                border-base-border
-              "
+                  mt-16
+                  overflow-hidden
+                  rounded-lg
+                  border
+                  border-base-border
+                "
               >
                 <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-base-border">
                   <Image
@@ -164,11 +163,10 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             )}
 
             {/* CONTEÚDO */}
-
             <section className="mt-16 space-y-12">
               <div>
                 <h2 className="font-display text-2xl font-semibold text-ink">
-                  Sobre o projeto
+                  Visão geral
                 </h2>
 
                 <p className="mt-4 leading-relaxed text-ink-muted">
@@ -247,8 +245,6 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           </article>
         </Container>
       </main>
-
-      <Footer />
     </>
   );
 }

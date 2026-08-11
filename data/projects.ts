@@ -1,6 +1,6 @@
 // Projetos apresentados no portfólio.
-// Estudos, experimentos e aplicações desenvolvidas
-// durante minha trajetória em tecnologia.
+// Cada projeto representa uma aplicação desenvolvida para resolver um
+// problema específico ou explorar conceitos utilizados em projetos reais.
 
 export type Project = {
   slug: string;
@@ -19,36 +19,88 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "conjuga",
+
+    name: "Conjuga",
+
+    category: "Laboratório de Engenharia de Software",
+
+    description:
+      "Aplicação web que representa a Conjuga e funciona como meu principal laboratório para evolução contínua em Engenharia de Software.",
+
+    longDescription:
+      "A Conjuga nasceu como o site institucional de uma empresa de engenharia de software e evoluiu para se tornar meu principal ambiente de experimentação técnica. O projeto cresce continuamente conforme estudo e implemento novos conceitos relacionados à arquitetura de software, desenvolvimento Full Stack, bancos de dados, Docker, CI/CD, integrações e inteligência artificial aplicada.",
+
+    problem:
+      "Criar uma aplicação real que permitisse evoluir continuamente competências técnicas sem depender de projetos artificiais de estudo.",
+
+    solution:
+      "Construção de uma aplicação com Next.js, React e TypeScript baseada em componentes reutilizáveis, preparada para incorporar novas funcionalidades e tecnologias de forma incremental.",
+
+    highlights: [
+      "Arquitetura baseada em componentes reutilizáveis",
+      "Design responsivo",
+      "SEO técnico",
+      "Otimização de performance",
+      "Integração com Supabase",
+      "Base preparada para evolução Full Stack",
+      "Laboratório contínuo de Engenharia de Software",
+    ],
+
+    image: "/projects/conjuga.png",
+
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "Vercel",
+    ],
+
+    github: "https://github.com/marllonpanisset/conjuga",
+
+    demo: "https://conjuga.com.br",
+  },
+
+  {
     slug: "portfolio-profissional",
 
     name: "Portfólio Profissional",
 
-    category: "Projeto Pessoal",
+    category: "Aplicação Web",
 
     description:
-      "Aplicação web desenvolvida para apresentar minha trajetória profissional, projetos técnicos e compartilhar conteúdos sobre tecnologia através de um blog integrado.",
+      "Aplicação desenvolvida para reunir minha experiência profissional, projetos técnicos e artigos em um único ambiente.",
 
     longDescription:
-      "Aplicação desenvolvida em Next.js para consolidar minha presença profissional na área de tecnologia, reunindo experiências, projetos, tecnologias utilizadas e um sistema de blog onde compartilho estudos, aprendizados e evolução profissional.",
+      "Projeto criado para centralizar minha presença profissional por meio de uma aplicação construída com Next.js, React e TypeScript. Além de apresentar experiências e projetos, também funciona como laboratório para aplicar arquitetura Front-End, componentização, SEO, acessibilidade, testes automatizados e organização de código.",
 
     problem:
-      "Criar uma plataforma profissional que fosse além de um currículo tradicional, permitindo demonstrar experiência técnica, apresentar projetos desenvolvidos e documentar conhecimentos adquiridos durante minha trajetória.",
+      "Criar uma aplicação que reunisse minha experiência profissional, projetos e artigos técnicos em um único ambiente.",
 
     solution:
-      "Desenvolvimento de uma aplicação utilizando Next.js App Router, arquitetura modular, componentes reutilizáveis, blog em MDX, otimização para SEO, responsividade e foco em experiência do usuário.",
+      "Desenvolvimento de uma aplicação utilizando Next.js App Router, arquitetura modular, componentes reutilizáveis, blog em MDX e foco em performance, SEO e experiência do usuário.",
 
     highlights: [
-      "Aplicação web desenvolvida com Next.js App Router",
-      "Portfólio profissional integrado ao sistema de blog",
-      "Blog utilizando MDX para criação de conteúdos técnicos",
-      "Arquitetura baseada em componentes reutilizáveis",
-      "Design responsivo e otimizado para experiência do usuário",
-      "Estrutura preparada para evolução contínua",
+      "Next.js App Router",
+      "Arquitetura baseada em componentes",
+      "Blog integrado em MDX",
+      "SEO técnico",
+      "Responsividade",
+      "Testes automatizados",
     ],
 
     image: "/projects/portfolio.png",
 
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "MDX"],
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "MDX",
+    ],
 
     github: "https://github.com/marllonpanisset/personal-portfolio",
 
@@ -60,31 +112,31 @@ export const projects: Project[] = [
 
     name: "Brototec",
 
-    category: "Projeto Experimental",
+    category: "Projeto Conceitual",
 
     description:
-      "Projeto experimental de produto digital desenvolvido para explorar criação de interfaces, arquitetura de aplicações e experiência do usuário.",
+      "Projeto conceitual criado para explorar arquitetura Front-End, componentização e construção de interfaces para empresas de tecnologia.",
 
     longDescription:
-      "Projeto criado para estudar o desenvolvimento de uma solução digital completa, explorando desde a definição da proposta até a implementação Front-End, organização de componentes e construção de uma experiência de navegação consistente.",
+      "Projeto desenvolvido para transformar o conceito de uma empresa fictícia de tecnologia em uma presença digital completa. O objetivo foi explorar arquitetura Front-End, organização de componentes, estrutura de páginas e boas práticas de desenvolvimento para aplicações institucionais.",
 
     problem:
-      "Transformar uma ideia de produto digital em uma aplicação estruturada, aplicando conceitos de desenvolvimento, interface e organização de software.",
+      "Construir uma aplicação capaz de apresentar serviços e posicionamento de forma organizada, responsiva e preparada para evolução.",
 
     solution:
-      "Desenvolvimento de uma aplicação utilizando Next.js com componentes reutilizáveis, estrutura escalável e foco em boas práticas de desenvolvimento Front-End.",
+      "Desenvolvimento de uma aplicação utilizando Next.js, TypeScript e componentes reutilizáveis, priorizando organização de código, experiência do usuário e facilidade de manutenção.",
 
     highlights: [
-      "Desenvolvimento completo da interface Front-End",
-      "Criação de componentes reutilizáveis",
-      "Organização de arquitetura utilizando Next.js",
-      "Aplicação de conceitos de UX/UI",
-      "Estudo de produto digital e experiência do usuário",
+      "Arquitetura baseada em componentes",
+      "Componentização reutilizável",
+      "Design responsivo",
+      "SEO",
+      "Experiência do usuário",
     ],
 
     image: "/projects/brototec.png",
 
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "UX/UI Design", "Vercel"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
   },
 
   {
@@ -92,26 +144,26 @@ export const projects: Project[] = [
 
     name: "Pousada Profissional",
 
-    category: "Estudo de Produto Digital",
+    category: "Projeto Conceitual",
 
     description:
-      "Protótipo de plataforma digital para hospedagem desenvolvido para explorar aplicações web, páginas dinâmicas e experiência de usuário.",
+      "Projeto desenvolvido para explorar arquitetura de aplicações, SEO e experiência do usuário em um cenário próximo ao mercado.",
 
     longDescription:
-      "Projeto desenvolvido para estudar a criação de uma solução digital para pequenos negócios, explorando estrutura de páginas, componentes reutilizáveis, apresentação de informações e organização de conteúdo através de uma aplicação moderna.",
+      "Aplicação criada para simular a presença digital de um meio de hospedagem, explorando estrutura de páginas, rotas dinâmicas, componentização, organização de conteúdo e boas práticas de desenvolvimento Front-End.",
 
     problem:
-      "Criar uma experiência digital capaz de apresentar serviços, informações e conteúdos de forma organizada, responsiva e preparada para crescimento.",
+      "Criar uma experiência digital capaz de apresentar serviços e informações de forma clara, responsiva e preparada para crescimento.",
 
     solution:
-      "Construção de uma aplicação utilizando Next.js com rotas dinâmicas, componentes reutilizáveis e arquitetura preparada para diferentes tipos de conteúdo.",
+      "Construção de uma aplicação utilizando Next.js com componentes reutilizáveis, rotas dinâmicas e foco em desempenho, SEO e experiência do usuário.",
 
     highlights: [
-      "Aplicação desenvolvida com Next.js",
-      "Criação de páginas dinâmicas",
-      "Componentização reutilizável",
-      "Estrutura preparada para múltiplos conteúdos",
-      "Foco em experiência do usuário e conversão",
+      "Next.js",
+      "Rotas dinâmicas",
+      "Componentização",
+      "SEO",
+      "Responsividade",
     ],
 
     image: "/projects/pousada-profissional.png",
@@ -132,32 +184,33 @@ export const projects: Project[] = [
   {
     slug: "dashboard-interativo-de-salarios",
 
-    name: "Dashboard Interativo de Salários em Data Science",
+    name: "Dashboard Interativo de Salários",
 
-    category: "Data Science",
+    category: "Estudo em Data Science",
 
     description:
-      "Dashboard desenvolvido com Python para análise e visualização de dados através de uma aplicação interativa.",
+      "Dashboard desenvolvido para análise e visualização interativa de dados utilizando Python.",
 
     longDescription:
-      "Projeto desenvolvido durante estudos de Data Science com objetivo de transformar uma base de dados em uma aplicação visual, permitindo análise de informações através de filtros, gráficos e indicadores interativos.",
+      "Projeto desenvolvido durante meus estudos em análise de dados com o objetivo de transformar uma base de informações em uma aplicação interativa. O dashboard utiliza Python, Pandas e Streamlit para realizar tratamento de dados, filtros dinâmicos e visualizações gráficas.",
 
     problem:
-      "Transformar dados brutos em informações úteis através de uma interface que facilite exploração e interpretação dos resultados.",
+      "Facilitar a exploração e interpretação de dados por meio de uma interface simples e interativa.",
 
     solution:
-      "Desenvolvimento de um dashboard utilizando Python para tratamento, análise e visualização de dados, criando uma experiência interativa para exploração das informações.",
+      "Desenvolvimento de um dashboard utilizando Python para tratamento de dados, filtros dinâmicos e visualizações gráficas.",
 
     highlights: [
-      "Tratamento e análise de dados utilizando Python",
-      "Criação de gráficos e visualizações interativas",
-      "Construção de aplicação utilizando Streamlit",
-      "Aplicação prática de conceitos de Data Science",
+      "Python",
+      "Pandas",
+      "Streamlit",
+      "Filtros dinâmicos",
+      "Visualização de dados",
     ],
 
     image: "/projects/dashboard-salarios.png",
 
-    stack: ["Python", "Streamlit", "Pandas", "Data Analysis"],
+    stack: ["Python", "Pandas", "Streamlit", "Data Analysis"],
 
     github:
       "https://github.com/marllonpanisset/dashboard-interativo-com-python",

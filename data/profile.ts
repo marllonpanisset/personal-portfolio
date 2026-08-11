@@ -6,14 +6,14 @@ export const profile = {
 
   role: "Desenvolvedor Front-End",
 
-  roleSecondary: "Analista de Suporte Técnico",
+  roleSecondary: "Estudante de Engenharia de Software",
 
   tagline:
-    "Profissional de TI com experiência em desenvolvimento Front-End e suporte técnico, atuando com React, Next.js, TypeScript, troubleshooting e resolução de problemas em ambientes corporativos.",
+    "Desenvolvedor Front-End com experiência na criação de aplicações web, plataformas digitais e e-commerces. Atualmente desenvolvo projetos com React, Next.js e TypeScript enquanto amplio minha formação em Engenharia de Software, arquitetura de aplicações, desenvolvimento back-end e inteligência artificial aplicada.",
 
   location: "Rio de Janeiro, Brasil",
 
-  yearsOfExperience: 11,
+  yearsOfExperience: 15,
 
   status: "open_to_work",
 
@@ -28,19 +28,19 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "Sou profissional de Tecnologia da Informação com experiência em desenvolvimento Front-End e suporte técnico, atuando na criação de aplicações web, resolução de problemas e melhoria da experiência dos usuários.",
+    "Sou Desenvolvedor Front-End com experiência no desenvolvimento e evolução de aplicações web, plataformas digitais e e-commerces. Ao longo da minha trajetória participei da construção de interfaces responsivas, componentes reutilizáveis e soluções utilizadas em produção por empresas de diferentes segmentos.",
 
-    "Ao longo da carreira, desenvolvi aplicações web utilizando tecnologias como React, Next.js, JavaScript e TypeScript, criando interfaces modernas, responsivas e focadas em experiência do usuário.",
+    "Trabalho principalmente com React, Next.js, TypeScript e JavaScript, aplicando boas práticas de componentização, acessibilidade, SEO, performance e organização de código para criar aplicações modernas, escaláveis e de fácil manutenção.",
 
-    "Minha trajetória também inclui experiência em suporte técnico corporativo, onde desenvolvi uma base sólida em infraestrutura, sistemas operacionais, troubleshooting de hardware e software, atendimento a usuários e análise de incidentes.",
+    "Minha carreira em tecnologia começou no suporte técnico, experiência que construiu uma base sólida em troubleshooting, infraestrutura e diagnóstico de problemas. Essa vivência complementa minha atuação como desenvolvedor e contribui para uma visão mais ampla sobre qualidade, estabilidade e comportamento das aplicações em produção.",
 
-    "A combinação entre desenvolvimento e suporte me permite enxergar tecnologia de forma mais completa, entendendo tanto a construção das aplicações quanto os desafios encontrados durante sua utilização e operação em ambientes reais.",
+    "Atualmente curso Bacharelado em Engenharia de Software e utilizo meus projetos autorais como laboratório para aprofundar conhecimentos em arquitetura de software, desenvolvimento back-end, bancos de dados, Docker, CI/CD e inteligência artificial aplicada, incorporando continuamente esses conceitos em projetos reais.",
   ],
 
   focusAreas: [
-    "Desenvolvimento Front-End com React, Next.js e TypeScript",
-    "Criação de interfaces modernas e aplicações web",
-    "Suporte técnico N1/N2 e troubleshooting",
-    "Infraestrutura, sistemas operacionais e melhoria contínua",
+    "React, Next.js e TypeScript",
+    "Arquitetura Front-End e componentização",
+    "SEO, acessibilidade, performance e UX",
+    "Engenharia de Software, back-end e IA aplicada",
   ],
 } as const;

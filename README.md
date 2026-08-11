@@ -1,58 +1,51 @@
 # Marllon Panisset — Portfólio Profissional
 
-Portfólio profissional de Marllon Panisset, profissional de tecnologia
-com experiência em desenvolvimento web, suporte técnico, infraestrutura
-e sustentação de aplicações em produção.
+Portfólio profissional desenvolvido para apresentar minha trajetória como Desenvolvedor Front-End, reunindo experiências profissionais, projetos autorais e artigos técnicos em uma aplicação construída com React, Next.js e TypeScript.
 
-O projeto reúne minha trajetória profissional, competências técnicas,
-projetos pessoais e estudos contínuos em tecnologia.
-
-O projeto foi desenvolvido com foco em performance, acessibilidade,
-organização de código e uma experiência de navegação simples e objetiva.
+Além de apresentar minha experiência, este projeto funciona como um laboratório para aplicar boas práticas de arquitetura Front-End, componentização, SEO, acessibilidade, performance e testes automatizados.
 
 ## Stack
 
-- Next.js 14 (App Router)
+- Next.js (App Router)
+- React
 - TypeScript
 - Tailwind CSS
-- Framer Motion — animações e transições
+- Framer Motion — animações e microinterações
 - Lucide React — ícones
-- MDX — artigos do blog
+- MDX — gerenciamento do blog
 - Vitest + React Testing Library — testes automatizados
 
 ## Funcionalidades
 
 - Landing page profissional
-- Blog com artigos em MDX
+- Timeline de experiências
+- Listagem de projetos com páginas individuais
+- Blog integrado utilizando MDX
 - SEO técnico utilizando Metadata API do Next.js
-- Listagem de projetos
 - Navegação responsiva
 - Componentes reutilizáveis
 - Testes automatizados
-- Deploy contínuo
 
 ## Arquitetura do projeto
 
-O projeto utiliza uma arquitetura baseada em componentes React,
-separação de responsabilidades e organização modular.
+O projeto utiliza uma arquitetura baseada em componentes React, separação de responsabilidades e organização modular para facilitar manutenção, evolução e reutilização de código.
 
 Principais conceitos aplicados:
 
-- Componentes reutilizáveis
+- Componentização
 - Separação entre dados e apresentação
 - Organização por domínio
-- Tipagem com TypeScript
-- Conteúdo gerenciado separadamente da interface
+- Tipagem estática com TypeScript
+- Conteúdo desacoplado da interface
+- Rotas dinâmicas
 - SEO utilizando Metadata API do Next.js
 - Testes automatizados com Vitest e React Testing Library
 
-A estrutura foi pensada para facilitar manutenção, evolução e
-escalabilidade do projeto ao longo do tempo.
+A estrutura foi planejada para permitir evolução contínua sem concentrar informações diretamente nos componentes visuais.
 
 ## Testes
 
-O projeto possui testes automatizados para garantir estabilidade dos
-componentes e páginas principais.
+O projeto possui testes automatizados para garantir estabilidade dos componentes, páginas e funções auxiliares.
 
 Ferramentas utilizadas:
 
@@ -60,19 +53,18 @@ Ferramentas utilizadas:
 - React Testing Library
 - Coverage V8
 
-Os testes cobrem componentes, páginas, dados e funções auxiliares.
+Os testes abrangem componentes, páginas, dados e funções utilitárias utilizadas pela aplicação.
 
 ## Editando o conteúdo
 
-Todo o conteúdo textual fica isolado em `data/`, então **não é necessário
-mexer nos componentes para atualizar informações**:
+Todo o conteúdo textual fica isolado na pasta `data/`, permitindo atualizar informações sem alterar os componentes da interface.
 
-| Arquivo              | O que editar                                                                                              |
-| -------------------- | --------------------------------------------------------------------------------------------------------- |
-| `data/profile.ts`    | Nome, cargo, descrição, links (LinkedIn, GitHub, e-mail, WhatsApp) e caminho do currículo em PDF          |
-| `data/experience.ts` | Empresas, cargos, períodos e descrições da timeline                                                       |
-| `data/skills.ts`     | Grupos e tags de competências                                                                             |
-| `data/projects.ts`   | Projetos exibidos na seção "Projetos" (a seção mostra um estado vazio até o primeiro item ser adicionado) |
+| Arquivo              | Descrição                                         |
+| -------------------- | ------------------------------------------------- |
+| `data/profile.ts`    | Informações pessoais, descrição, contatos e links |
+| `data/experience.ts` | Experiências profissionais                        |
+| `data/skills.ts`     | Competências técnicas                             |
+| `data/projects.ts`   | Projetos apresentados no portfólio                |
 
 ## Rodando localmente
 
@@ -81,7 +73,11 @@ npm install
 npm run dev
 ```
 
-Acesse [http://localhost:3000](http://localhost:3000).
+Acesse:
+
+```
+http://localhost:3000
+```
 
 ## Build de produção
 
@@ -90,21 +86,21 @@ npm run build
 npm start
 ```
 
-## Deploy
-
-O projeto possui deploy automatizado integrado ao repositório Git,
-permitindo publicação contínua a cada atualização validada.
-
 ## Objetivo
 
-Este projeto foi criado para centralizar minha presença profissional,
-documentar minha evolução em tecnologia e apresentar projetos,
-experiências e aprendizados durante minha trajetória profissional.
+Este projeto foi criado para centralizar minha presença profissional e demonstrar minha forma de desenvolver aplicações Front-End, aplicando organização de código, componentização, acessibilidade, SEO, performance e testes automatizados.
+
+O projeto evolui continuamente conforme avanço nos estudos de Engenharia de Software e incorporo novas tecnologias e boas práticas de desenvolvimento.
 
 ## Autor
 
-Marllon Panisset
+**Marllon Panisset**
 
-GitHub: https://github.com/marllonpanisset
-LinkedIn: https://linkedin.com/in/marllonpanisset
-Portfólio: https://marllon.netlify.app
+GitHub  
+https://github.com/marllonpanisset
+
+LinkedIn  
+https://linkedin.com/in/marllon-panisset
+
+Portfólio  
+https://marllon.netlify.app

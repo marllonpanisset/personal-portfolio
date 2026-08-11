@@ -1,5 +1,5 @@
 // Competências exibidas como tags. Agrupadas por categoria apenas para
-// organização interna — a UI pode optar por renderizar tudo junto.
+// organização interna — a interface pode optar por renderizar tudo junto.
 
 export type SkillGroup = {
   label: string;
@@ -8,51 +8,64 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: "Suporte Técnico",
+    label: "Front-End",
     items: [
-      "Suporte N1/N2",
-      "Atendimento ao usuário",
-      "Troubleshooting",
-      "Gestão de incidentes",
-      "Análise de causa raiz",
-      "Application Support",
-      "DevTools",
-    ],
-  },
-  {
-    label: "Infraestrutura",
-    items: [
-      "Windows",
-      "Linux",
-      "Redes TCP/IP",
-      "Configuração de estações",
-      "Hardware",
-      "Backup",
-      "Permissões de acesso",
-    ],
-  },
-  {
-    label: "Aplicações & Desenvolvimento",
-    items: [
-      "Git/GitHub",
-      "JavaScript",
       "React",
       "Next.js",
       "TypeScript",
+      "JavaScript",
       "HTML5",
       "CSS3",
+      "SCSS",
       "Tailwind CSS",
-      "Python básico",
-      "SQL básico",
-      "APIs REST (conceitos)",
     ],
   },
+
   {
-    label: "Qualidade & Testes",
-    items: ["Testes automatizados", "Vitest", "React Testing Library"],
+    label: "Desenvolvimento Web",
+    items: [
+      "Componentização",
+      "APIs REST",
+      "SEO",
+      "Performance",
+      "Acessibilidade",
+      "Responsividade",
+      "UX",
+      "Git",
+      "GitHub",
+    ],
   },
+
   {
     label: "Plataformas",
-    items: ["WordPress", "VTEX", "E-commerce"],
+    items: [
+      "VTEX IO",
+      "VTEX Legacy",
+      "WordPress",
+      "Drupal",
+      "Hugo",
+      "Pug",
+      "Markdown",
+    ],
+  },
+
+  {
+    label: "Testes",
+    items: ["Vitest", "React Testing Library", "Testes Automatizados"],
+  },
+
+  {
+    label: "Tecnologias em evolução",
+    items: [
+      "Node.js",
+      "PostgreSQL",
+      "Docker",
+      "CI/CD",
+      "Arquitetura de Software",
+      "Inteligência Artificial",
+      "Python",
+      "Pandas",
+      "Streamlit",
+    ],
   },
 ];

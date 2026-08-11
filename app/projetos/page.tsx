@@ -17,9 +17,9 @@ export default function ProjectsPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-muted">
-              Uma seleção de projetos desenvolvidos ao longo da minha trajetória
-              em Tecnologia da Informação, envolvendo desenvolvimento web,
-              produtos digitais e estudos em Data Science.
+              Projetos que demonstram minha experiência no desenvolvimento de
+              aplicações web, arquitetura Front-End e evolução contínua em
+              Engenharia de Software.
             </p>
           </Container>
         </section>
