@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-labelledby="title description">
+  <title id="title">Programação na Era da IA</title>
+  <desc id="description">Capa editorial do e-book de Marllon Panisset</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12161f"/>
+      <stop offset="1" stop-color="#07090d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(960 280) rotate(132) scale(760 760)">
+      <stop stop-color="#4fd1c5" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#4fd1c5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#e7eaf1" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#background)"/>
+  <rect width="1200" height="1600" fill="url(#glow)"/>
+  <rect width="1200" height="1600" fill="url(#grid)"/>
+  <path d="M80 96h1040" stroke="#e7eaf1" stroke-opacity=".18"/>
+  <path d="M80 1504h1040" stroke="#e7eaf1" stroke-opacity=".18"/>
+  <circle cx="1040" cy="96" r="8" fill="#4fd1c5"/>
+  <text x="80" y="160" fill="#4fd1c5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="25" letter-spacing="7">MARLLONCODE / 01</text>
+  <text x="80" y="565" fill="#e7eaf1" font-family="Space Grotesk, Arial, sans-serif" font-size="116" font-weight="700" letter-spacing="-4">
+    <tspan x="80" dy="0">Programação</tspan>
+    <tspan x="80" dy="132">na Era da</tspan>
+    <tspan x="80" dy="132" fill="#4fd1c5">IA</tspan>
+  </text>
+  <path d="M80 1040h160" stroke="#4fd1c5" stroke-width="4"/>
+  <text x="80" y="1120" fill="#8a93a6" font-family="Inter, Arial, sans-serif" font-size="34">
+    <tspan x="80" dy="0">Direção, fundamentos e prática para</tspan>
+    <tspan x="80" dy="52">aprender e construir com IA sem</tspan>
+    <tspan x="80" dy="52">perder o controle.</tspan>
+  </text>
+  <text x="80" y="1450" fill="#e7eaf1" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">MARLLON PANISSET</text>
+  <text x="1120" y="1450" fill="#565e70" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22">1ª EDIÇÃO — 2026</text>
+</svg>

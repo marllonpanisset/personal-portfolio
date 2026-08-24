@@ -1,0 +1,1 @@
+grant insert on table public.book_leads to service_role;
