@@ -23,13 +23,13 @@ describe("BookLeadForm", () => {
     expect(screen.getByRole("checkbox")).not.toBeChecked();
   });
 
-  it("preserva source e libera o PDF após uma resposta bem-sucedida", async () => {
+  it("envia UTMs da URL e libera o PDF após uma resposta bem-sucedida", async () => {
     const fetchMock = vi.fn().mockResolvedValue({ ok: true });
     vi.stubGlobal("fetch", fetchMock);
     window.history.replaceState(
       {},
       "",
-      "/livros/programacao-na-era-da-ia?source=instagram-launch",
+      "/livros/programacao-na-era-da-ia?utm_source=instagram&utm_medium=dm&utm_campaign=ebook_programacao_ia",
     );
 
     render(
@@ -58,7 +58,9 @@ describe("BookLeadForm", () => {
       name: "Marllon",
       email: "marllon@example.com",
       bookSlug: "programacao-na-era-da-ia",
-      source: "instagram-launch",
+      utmSource: "instagram",
+      utmMedium: "dm",
+      utmCampaign: "ebook_programacao_ia",
       marketingConsent: false,
     });
     expect(screen.getByRole("link", { name: "Baixar PDF" })).toHaveAttribute(
@@ -93,6 +95,9 @@ describe("BookLeadForm", () => {
 
     expect(JSON.parse(fetchMock.mock.calls[0][1].body as string)).toMatchObject({
       marketingConsent: true,
+      utmSource: null,
+      utmMedium: null,
+      utmCampaign: null,
     });
   });
 

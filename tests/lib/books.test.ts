@@ -11,12 +11,14 @@ const validInput: BookLeadInput = {
   name: "Marllon Panisset",
   email: "marllon@example.com",
   bookSlug: "programacao-na-era-da-ia",
-  source: "instagram-launch",
+  utmSource: "instagram",
+  utmMedium: "dm",
+  utmCampaign: "ebook_programacao_ia",
   marketingConsent: false,
 };
 
 describe("validateBookLeadInput", () => {
-  it("valida, normaliza e preserva a origem do lead", () => {
+  it("valida, normaliza e preserva UTMs do lead", () => {
     const result = validateBookLeadInput({
       ...validInput,
       name: "  Marllon Panisset  ",
@@ -49,6 +51,40 @@ describe("validateBookLeadInput", () => {
     const result = validateBookLeadInput(input);
 
     expect(result.success && result.data.marketingConsent).toBe(false);
+  });
+
+  it("aceita acesso direto e normaliza UTMs ausentes como null", () => {
+    const result = validateBookLeadInput({
+      name: validInput.name,
+      email: validInput.email,
+      bookSlug: validInput.bookSlug,
+      marketingConsent: false,
+    });
+
+    expect(result).toEqual({
+      success: true,
+      data: {
+        ...validInput,
+        utmSource: null,
+        utmMedium: null,
+        utmCampaign: null,
+      },
+    });
+  });
+
+  it("rejeita UTMs excessivas ou de tipos inesperados", () => {
+    const result = validateBookLeadInput({
+      ...validInput,
+      utmSource: ["instagram"],
+      utmCampaign: "a".repeat(161),
+    });
+
+    expect(result.success).toBe(false);
+
+    if (!result.success) {
+      expect(result.errors.utmSource).toBeDefined();
+      expect(result.errors.utmCampaign).toBeDefined();
+    }
   });
 });
 

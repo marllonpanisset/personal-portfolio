@@ -9,6 +9,37 @@ export type BookLeadValidationResult =
   | { success: false; errors: LeadFieldErrors };
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const MAX_UTM_LENGTH = 160;
+
+function parseOptionalUtm(
+  input: Record<string, unknown>,
+  key: "utmSource" | "utmMedium" | "utmCampaign",
+  errors: LeadFieldErrors,
+) {
+  const value = input[key];
+
+  if (value === undefined || value === null || value === "") {
+    return null;
+  }
+
+  if (typeof value !== "string") {
+    errors[key] = "Parâmetro UTM inválido.";
+    return null;
+  }
+
+  const normalized = value.trim();
+
+  if (!normalized) {
+    return null;
+  }
+
+  if (normalized.length > MAX_UTM_LENGTH) {
+    errors[key] = `O parâmetro UTM deve ter no máximo ${MAX_UTM_LENGTH} caracteres.`;
+    return null;
+  }
+
+  return normalized;
+}
 
 export function validateBookLeadInput(
   value: unknown,
@@ -29,12 +60,11 @@ export function validateBookLeadInput(
   const email = typeof input.email === "string" ? input.email.trim() : "";
   const bookSlug =
     typeof input.bookSlug === "string" ? input.bookSlug.trim() : "";
-  const source =
-    typeof input.source === "string" && input.source.trim()
-      ? input.source.trim()
-      : "livros";
   const marketingConsent = input.marketingConsent ?? false;
   const errors: LeadFieldErrors = {};
+  const utmSource = parseOptionalUtm(input, "utmSource", errors);
+  const utmMedium = parseOptionalUtm(input, "utmMedium", errors);
+  const utmCampaign = parseOptionalUtm(input, "utmCampaign", errors);
 
   if (!name) {
     errors.name = "Informe seu nome.";
@@ -52,10 +82,6 @@ export function validateBookLeadInput(
     errors.bookSlug = "Livro inválido.";
   }
 
-  if (source.length > 160) {
-    errors.source = "A origem deve ter no máximo 160 caracteres.";
-  }
-
   if (typeof marketingConsent !== "boolean") {
     errors.marketingConsent = "Consentimento inválido.";
   }
@@ -70,7 +96,9 @@ export function validateBookLeadInput(
       name,
       email: email.toLowerCase(),
       bookSlug,
-      source,
+      utmSource,
+      utmMedium,
+      utmCampaign,
       marketingConsent: marketingConsent as boolean,
     },
   };

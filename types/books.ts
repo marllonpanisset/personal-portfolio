@@ -24,7 +24,9 @@ export type BookLeadInput = {
   name: string;
   email: string;
   bookSlug: string;
-  source: string;
+  utmSource: string | null;
+  utmMedium: string | null;
+  utmCampaign: string | null;
   marketingConsent: boolean;
 };
 

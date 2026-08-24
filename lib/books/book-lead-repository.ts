@@ -22,13 +22,9 @@ export class BookLeadPersistenceError extends Error {
   }
 }
 
-function isExistingBookLead(error: { code?: string; message?: string }) {
-  return error.code === "23505";
-}
-
 /**
  * Adapter server-side para a persistência de leads de livros.
- * Conflitos de e-mail + livro representam uma aquisição já concluída.
+ * A RPC mantém a aquisição idempotente e atualiza apenas metadados permitidos.
  */
 export const bookLeadRepository: BookLeadRepository = {
   async save(lead) {
@@ -44,24 +40,19 @@ export const bookLeadRepository: BookLeadRepository = {
       throw error;
     }
 
-    const { error } = await supabase.from("book_leads").insert({
-      name: lead.name,
-      email: lead.email,
-      book_slug: lead.bookSlug,
-      source: lead.source,
-      marketing_consent: lead.marketingConsent,
+    const { error } = await supabase.rpc("upsert_book_lead", {
+      p_name: lead.name,
+      p_email: lead.email,
+      p_book_slug: lead.bookSlug,
+      p_utm_source: lead.utmSource,
+      p_utm_medium: lead.utmMedium,
+      p_utm_campaign: lead.utmCampaign,
+      p_marketing_consent: lead.marketingConsent,
     });
 
-    if (!error || isExistingBookLead(error)) {
+    if (!error) {
       return;
     }
-
-    console.error("Supabase book lead persistence failed", {
-      code: error.code,
-      message: error.message,
-      details: error.details,
-      hint: error.hint,
-    });
 
     throw new BookLeadPersistenceError();
   },

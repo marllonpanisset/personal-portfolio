@@ -1,11 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-const { insert, from, createSupabaseServerClient } = vi.hoisted(() => {
-  const insert = vi.fn();
-  const from = vi.fn(() => ({ insert }));
-  const createSupabaseServerClient = vi.fn(() => ({ from }));
+const { rpc, createSupabaseServerClient } = vi.hoisted(() => {
+  const rpc = vi.fn();
+  const createSupabaseServerClient = vi.fn(() => ({ rpc }));
 
-  return { insert, from, createSupabaseServerClient };
+  return { rpc, createSupabaseServerClient };
 });
 
 vi.mock("@/lib/supabase/server", () => ({
@@ -23,7 +22,9 @@ const lead: BookLead = {
   name: "Marllon Panisset",
   email: "marllon@example.com",
   bookSlug: "programacao-na-era-da-ia",
-  source: "instagram-launch",
+  utmSource: "instagram",
+  utmMedium: "dm",
+  utmCampaign: "ebook_programacao_ia",
   marketingConsent: false,
   createdAt: "2026-08-23T00:00:00.000Z",
 };
@@ -33,31 +34,24 @@ describe("bookLeadRepository", () => {
     vi.clearAllMocks();
   });
 
-  it("insere os campos persistidos e deixa created_at para o banco", async () => {
-    insert.mockResolvedValue({ error: null });
+  it("envia os dados normalizados para a RPC atômica", async () => {
+    rpc.mockResolvedValue({ error: null });
 
     await bookLeadRepository.save(lead);
 
-    expect(from).toHaveBeenCalledWith("book_leads");
-    expect(insert).toHaveBeenCalledWith({
-      name: lead.name,
-      email: lead.email,
-      book_slug: lead.bookSlug,
-      source: lead.source,
-      marketing_consent: false,
+    expect(rpc).toHaveBeenCalledWith("upsert_book_lead", {
+      p_name: lead.name,
+      p_email: lead.email,
+      p_book_slug: lead.bookSlug,
+      p_utm_source: lead.utmSource,
+      p_utm_medium: lead.utmMedium,
+      p_utm_campaign: lead.utmCampaign,
+      p_marketing_consent: false,
     });
-  });
-
-  it("considera conflito único como aquisição já válida", async () => {
-    insert.mockResolvedValue({
-      error: { code: "23505", message: "duplicate key" },
-    });
-
-    await expect(bookLeadRepository.save(lead)).resolves.toBeUndefined();
   });
 
   it("propaga falhas de persistência não relacionadas a duplicidade", async () => {
-    insert.mockResolvedValue({
+    rpc.mockResolvedValue({
       error: { code: "42501", message: "permission denied" },
     });
 

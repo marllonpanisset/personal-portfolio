@@ -25,9 +25,7 @@ export function BookLeadForm({ bookSlug, pdf }: BookLeadFormProps) {
     setErrorMessage("");
 
     const formData = new FormData(event.currentTarget);
-    const source =
-      new URLSearchParams(window.location.search).get("source")?.trim() ||
-      "livros";
+    const searchParams = new URLSearchParams(window.location.search);
 
     try {
       const response = await fetch("/api/livros/leads", {
@@ -39,7 +37,9 @@ export function BookLeadForm({ bookSlug, pdf }: BookLeadFormProps) {
           name: formData.get("name"),
           email: formData.get("email"),
           bookSlug,
-          source,
+          utmSource: searchParams.get("utm_source"),
+          utmMedium: searchParams.get("utm_medium"),
+          utmCampaign: searchParams.get("utm_campaign"),
           marketingConsent: formData.get("marketingConsent") === "on",
         }),
       });
