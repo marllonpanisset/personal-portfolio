@@ -10,6 +10,7 @@ import {
   getPublishedBookBySlug,
   getPublishedBooks,
 } from "@/data/books";
+import { absoluteUrl, defaultOpenGraphImage } from "@/lib/site-metadata";
 
 type BookPageProps = {
   params: Promise<{
@@ -36,7 +37,7 @@ export async function generateMetadata({
   }
 
   const title = `${book.title} | ${book.brand}`;
-  const url = `/livros/${book.slug}`;
+  const url = absoluteUrl(`/livros/${book.slug}`);
 
   return {
     title: { absolute: title },
@@ -49,20 +50,13 @@ export async function generateMetadata({
       description: book.subtitle,
       url,
       type: "website",
-      images: [
-        {
-          url: book.cover,
-          width: 1200,
-          height: 1600,
-          alt: `Capa do livro ${book.title}`,
-        },
-      ],
+      images: [defaultOpenGraphImage],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: book.subtitle,
-      images: [book.cover],
+      images: [defaultOpenGraphImage],
     },
   };
 }

@@ -134,9 +134,24 @@ describe("generateMetadata", () => {
       }),
     });
 
-    expect(metadata.title).toBe(`${post.title} | Marllon Panisset`);
+    expect(metadata.title).toBe(post.title);
 
     expect(metadata.description).toBe(post.excerpt);
+
+    expect(metadata.alternates?.canonical).toBe(
+      `https://marllon.netlify.app/blog/${post.slug}`,
+    );
+
+    expect(metadata.openGraph).toMatchObject({
+      url: `https://marllon.netlify.app/blog/${post.slug}`,
+      type: "article",
+      images: ["https://marllon.netlify.app/og-image.png"],
+    });
+
+    expect(metadata.twitter).toMatchObject({
+      card: "summary_large_image",
+      images: ["https://marllon.netlify.app/og-image.png"],
+    });
   });
 
   it("deve retornar título de artigo não encontrado", async () => {

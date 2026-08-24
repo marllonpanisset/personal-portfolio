@@ -5,6 +5,7 @@ import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 import { profile } from "@/data/profile";
+import { defaultOpenGraphImage, siteUrl } from "@/lib/site-metadata";
 
 import { Nav } from "@/components/navigation/Nav";
 import { Footer } from "@/components/sections/Footer";
@@ -29,8 +30,6 @@ const mono = JetBrains_Mono({
   variable: "--font-mono",
   display: "swap",
 });
-
-const siteUrl = "https://marllon.netlify.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -96,9 +95,9 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/og-image.png",
+        url: defaultOpenGraphImage,
         width: 1200,
-        height: 630,
+        height: 632,
         alt: `${profile.name} — Tecnologia e Desenvolvimento`,
       },
     ],
@@ -112,7 +111,7 @@ export const metadata: Metadata = {
     description:
       "Projetos, estudos e artigos sobre tecnologia, desenvolvimento e evolução profissional.",
 
-    images: ["/og-image.png"],
+    images: [defaultOpenGraphImage],
   },
 
   icons: {

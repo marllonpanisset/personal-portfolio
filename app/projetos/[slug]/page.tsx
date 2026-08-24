@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
@@ -8,12 +9,51 @@ import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
 
 import { projects } from "@/data/projects";
+import { absoluteUrl, defaultOpenGraphImage } from "@/lib/site-metadata";
 
 type ProjectPageProps = {
   params: {
     slug: string;
   };
 };
+
+export function generateMetadata({ params }: ProjectPageProps): Metadata {
+  const project = projects.find((item) => item.slug === params.slug);
+
+  if (!project) {
+    return {
+      title: "Projeto não encontrado",
+    };
+  }
+
+  const title = project.name;
+  const description = project.description;
+  const url = absoluteUrl(`/projetos/${project.slug}`);
+  const image = project.image
+    ? absoluteUrl(project.image)
+    : defaultOpenGraphImage;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      images: [image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
+  };
+}
 
 export default function ProjectPage({ params }: ProjectPageProps) {
   const project = projects.find((item) => item.slug === params.slug);

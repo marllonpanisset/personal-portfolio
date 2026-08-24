@@ -1,6 +1,34 @@
+import type { Metadata } from "next";
+
 import { Nav } from "@/components/navigation/Nav";
 import { Container } from "@/components/ui/Container";
 import { Projects } from "@/components/sections/Projects";
+import { profile } from "@/data/profile";
+import { absoluteUrl, defaultOpenGraphImage } from "@/lib/site-metadata";
+
+export const metadata: Metadata = {
+  title: "Projetos",
+  description:
+    "Projetos de Marllon Panisset em desenvolvimento web, arquitetura Front-End e Engenharia de Software.",
+  alternates: {
+    canonical: absoluteUrl("/projetos"),
+  },
+  openGraph: {
+    title: `Projetos — ${profile.name}`,
+    description:
+      "Projetos de Marllon Panisset em desenvolvimento web, arquitetura Front-End e Engenharia de Software.",
+    url: absoluteUrl("/projetos"),
+    type: "website",
+    images: [defaultOpenGraphImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Projetos — ${profile.name}`,
+    description:
+      "Projetos de Marllon Panisset em desenvolvimento web, arquitetura Front-End e Engenharia de Software.",
+    images: [defaultOpenGraphImage],
+  },
+};
 
 export default function ProjectsPage() {
   return (

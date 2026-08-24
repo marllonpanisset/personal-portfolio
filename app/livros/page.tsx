@@ -4,20 +4,29 @@ import { BookCard } from "@/components/books/BookCard";
 import { Container } from "@/components/ui/Container";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { getPublishedBooks } from "@/data/books";
+import { absoluteUrl, defaultOpenGraphImage } from "@/lib/site-metadata";
 
 export const metadata: Metadata = {
   title: { absolute: "Livros | MarllonCode" },
   description:
     "Livros e materiais editoriais de Marllon Panisset sobre programação, tecnologia e inteligência artificial.",
   alternates: {
-    canonical: "/livros",
+    canonical: absoluteUrl("/livros"),
   },
   openGraph: {
     title: "Livros | MarllonCode",
     description:
       "Livros e materiais editoriais sobre programação, tecnologia e inteligência artificial.",
-    url: "/livros",
+    url: absoluteUrl("/livros"),
     type: "website",
+    images: [defaultOpenGraphImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Livros | MarllonCode",
+    description:
+      "Livros e materiais editoriais sobre programação, tecnologia e inteligência artificial.",
+    images: [defaultOpenGraphImage],
   },
 };
 

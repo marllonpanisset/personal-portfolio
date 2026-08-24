@@ -1,7 +1,9 @@
 import { describe, expect, it, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 
-import ProjectPage from "@/app/projetos/[slug]/page";
+import ProjectPage, {
+  generateMetadata,
+} from "@/app/projetos/[slug]/page";
 
 import { projects } from "@/data/projects";
 
@@ -28,6 +30,32 @@ vi.mock("next/image", () => ({
 }));
 
 describe("ProjectPage", () => {
+  it("deve gerar metadata com URLs absolutas para um projeto", () => {
+    const project = projects[0];
+
+    const metadata = generateMetadata({
+      params: {
+        slug: project.slug,
+      },
+    });
+
+    expect(metadata).toMatchObject({
+      title: project.name,
+      description: project.description,
+      alternates: {
+        canonical: `https://marllon.netlify.app/projetos/${project.slug}`,
+      },
+      openGraph: {
+        url: `https://marllon.netlify.app/projetos/${project.slug}`,
+        images: [`https://marllon.netlify.app${project.image}`],
+      },
+      twitter: {
+        card: "summary_large_image",
+        images: [`https://marllon.netlify.app${project.image}`],
+      },
+    });
+  });
+
   it("deve renderizar um projeto existente", () => {
     const project = projects[0];
 

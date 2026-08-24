@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import { getPostBySlug, getPosts } from "@/lib/blog";
+import { absoluteUrl, defaultOpenGraphImage } from "@/lib/site-metadata";
 
 import { Container } from "@/components/ui/Container";
 import CategoryBadge from "@/components/blog/CategoryBadge";
@@ -32,9 +33,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const url = absoluteUrl(`/blog/${post.slug}`);
+
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url,
+      type: "article",
+      publishedTime: post.date,
+      images: [defaultOpenGraphImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [defaultOpenGraphImage],
+    },
   };
 }
 

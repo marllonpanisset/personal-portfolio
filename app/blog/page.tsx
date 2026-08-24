@@ -9,11 +9,30 @@ import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import BlogPagination from "@/components/blog/BlogPagination";
 import { profile } from "@/data/profile";
+import { defaultOpenGraphImage, absoluteUrl } from "@/lib/site-metadata";
 
 export const metadata: Metadata = {
   title: "Blog",
   description:
     "Artigos sobre tecnologia, desenvolvimento, carreira e aprendizados durante minha evolução profissional.",
+  alternates: {
+    canonical: absoluteUrl("/blog"),
+  },
+  openGraph: {
+    title: `Blog — ${profile.name}`,
+    description:
+      "Artigos sobre tecnologia, desenvolvimento, carreira e aprendizados durante minha evolução profissional.",
+    url: absoluteUrl("/blog"),
+    type: "website",
+    images: [defaultOpenGraphImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Blog — ${profile.name}`,
+    description:
+      "Artigos sobre tecnologia, desenvolvimento, carreira e aprendizados durante minha evolução profissional.",
+    images: [defaultOpenGraphImage],
+  },
 };
 
 type Props = {
