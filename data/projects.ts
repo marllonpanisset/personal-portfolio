@@ -26,24 +26,35 @@ export const projects: Project[] = [
     category: "Laboratório de Engenharia de Software",
 
     description:
-      "Aplicação web que representa a Conjuga e funciona como meu principal laboratório para evolução contínua em Engenharia de Software.",
+      "Aplicação web institucional e laboratório de Engenharia de Software com arquitetura moderna, formulário Full Stack, API própria, persistência de leads e integrações com serviços externos.",
 
     longDescription:
-      "A Conjuga nasceu como o site institucional de uma empresa de engenharia de software e evoluiu para se tornar meu principal ambiente de experimentação técnica. O projeto cresce continuamente conforme estudo e implemento novos conceitos relacionados à arquitetura de software, desenvolvimento Full Stack, bancos de dados, Docker, CI/CD, integrações e inteligência artificial aplicada.",
+      "A Conjuga nasceu como o site institucional de uma empresa de engenharia de software e evoluiu para se tornar meu principal laboratório de desenvolvimento Full Stack e Engenharia de Software. O projeto utiliza Next.js, React e TypeScript em uma arquitetura baseada em componentes e vem incorporando funcionalidades reais de produção, como API para processamento de contatos, persistência de leads no Supabase, validação de formulários, consentimento de privacidade, SEO técnico, analytics condicionado ao consentimento do usuário e documentação estruturada do negócio e da aplicação. Além de representar uma presença digital real em produção, o projeto funciona como ambiente contínuo para estudar arquitetura de software, bancos de dados, integrações, automações, observabilidade, segurança, CI/CD e inteligência artificial aplicada.",
 
     problem:
-      "Criar uma aplicação real que permitisse evoluir continuamente competências técnicas sem depender de projetos artificiais de estudo.",
+      "Construir uma aplicação real capaz de representar uma operação de software e, ao mesmo tempo, servir como ambiente contínuo para aplicar conceitos de Engenharia de Software em situações próximas às encontradas em produção.",
 
     solution:
-      "Construção de uma aplicação com Next.js, React e TypeScript baseada em componentes reutilizáveis, preparada para incorporar novas funcionalidades e tecnologias de forma incremental.",
+      "Desenvolvimento de uma aplicação Full Stack com Next.js, React e TypeScript, combinando arquitetura modular, componentes reutilizáveis, rotas de API, integração com banco de dados e serviços externos. O fluxo de contato envia os dados para uma API da própria aplicação, realiza o processamento no servidor e persiste os leads no Supabase, mantendo responsabilidades de interface, regras de processamento e armazenamento separadas.",
 
     highlights: [
-      "Arquitetura baseada em componentes reutilizáveis",
-      "Design responsivo",
-      "SEO técnico",
+      "Next.js App Router",
+      "Arquitetura modular baseada em componentes reutilizáveis",
+      "Formulário de contato com fluxo Full Stack",
+      "API server-side para processamento de contatos",
+      "Persistência de leads no Supabase",
+      "Migrations para evolução controlada do banco de dados",
+      "Validação e tratamento de dados do formulário",
+      "Consentimento de privacidade no envio de contatos",
+      "Separação entre interface, processamento e persistência",
+      "SEO técnico e sitemap",
+      "Google Search Console",
+      "Google Analytics condicionado ao consentimento do usuário",
+      "Design responsivo e acessibilidade",
       "Otimização de performance",
-      "Integração com Supabase",
-      "Base preparada para evolução Full Stack",
+      "Documentação estratégica e técnica do projeto",
+      "Arquitetura preparada para integrações e automações",
+      "Deploy contínuo em ambiente de produção",
       "Laboratório contínuo de Engenharia de Software",
     ],
 
@@ -55,6 +66,8 @@ export const projects: Project[] = [
       "TypeScript",
       "Tailwind CSS",
       "Supabase",
+      "PostgreSQL",
+      "REST API",
       "Vercel",
     ],
 
@@ -71,24 +84,39 @@ export const projects: Project[] = [
     category: "Aplicação Web",
 
     description:
-      "Aplicação desenvolvida para reunir minha experiência profissional, projetos técnicos e artigos em um único ambiente.",
+      "Aplicação web que centraliza minha trajetória profissional, projetos, artigos técnicos e publicações autorais, evoluindo também como plataforma do projeto MarllonCode.",
 
     longDescription:
-      "Projeto criado para centralizar minha presença profissional por meio de uma aplicação construída com Next.js, React e TypeScript. Além de apresentar experiências e projetos, também funciona como laboratório para aplicar arquitetura Front-End, componentização, SEO, acessibilidade, testes automatizados e organização de código.",
+      "Meu portfólio profissional foi desenvolvido com Next.js, React e TypeScript para centralizar minha trajetória, experiências, projetos técnicos e produção de conteúdo em uma única aplicação. Com o tempo, deixou de funcionar apenas como uma apresentação profissional e passou a servir também como infraestrutura para o MarllonCode, reunindo blog, artigos técnicos e páginas dedicadas a conteúdos autorais. Entre as evoluções recentes está a publicação do e-book 'Programação na Era da IA', com página própria para apresentação e distribuição do material. A aplicação utiliza App Router, rotas dinâmicas, conteúdo em MDX, arquitetura modular, componentes reutilizáveis, SEO técnico, testes automatizados e práticas voltadas a performance, acessibilidade e manutenção contínua.",
 
     problem:
-      "Criar uma aplicação que reunisse minha experiência profissional, projetos e artigos técnicos em um único ambiente.",
+      "Centralizar em uma única aplicação minha experiência profissional, projetos, produção técnica e conteúdos autorais, evitando depender de diferentes plataformas externas para apresentar minha trajetória e publicar materiais.",
 
     solution:
-      "Desenvolvimento de uma aplicação utilizando Next.js App Router, arquitetura modular, componentes reutilizáveis, blog em MDX e foco em performance, SEO e experiência do usuário.",
+      "Construção de uma aplicação modular com Next.js App Router, React e TypeScript, utilizando componentes reutilizáveis e separação entre dados, conteúdo e apresentação. O projeto incorpora blog em MDX, páginas individuais de projetos, rotas de conteúdo, SEO técnico e uma área dedicada à distribuição de materiais autorais, permitindo que o portfólio evolua progressivamente de uma página profissional para uma plataforma própria de conteúdo.",
 
     highlights: [
       "Next.js App Router",
-      "Arquitetura baseada em componentes",
-      "Blog integrado em MDX",
-      "SEO técnico",
-      "Responsividade",
-      "Testes automatizados",
+      "Arquitetura modular e componentizada",
+      "Separação entre dados, conteúdo e apresentação",
+      "Páginas individuais para projetos",
+      "Blog integrado utilizando MDX",
+      "Rotas dinâmicas para conteúdo",
+      "Página dedicada ao e-book Programação na Era da IA",
+      "Infraestrutura de conteúdo para o projeto MarllonCode",
+      "Publicação e distribuição de materiais autorais",
+      "SEO técnico utilizando Metadata API",
+      "URLs e páginas preparadas para compartilhamento em redes sociais",
+      "Design responsivo",
+      "Acessibilidade",
+      "Otimização de performance",
+      "Animações e microinterações com Framer Motion",
+      "Testes automatizados com Vitest",
+      "Testes de componentes com React Testing Library",
+      "Coverage utilizando V8",
+      "Conteúdo desacoplado dos componentes visuais",
+      "Deploy contínuo",
+      "Evolução contínua como laboratório Front-End e de Engenharia de Software",
     ],
 
     image: "/projects/portfolio.png",
@@ -100,6 +128,9 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Framer Motion",
       "MDX",
+      "Vitest",
+      "React Testing Library",
+      "Netlify",
     ],
 
     github: "https://github.com/marllonpanisset/personal-portfolio",
