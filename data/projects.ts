@@ -23,19 +23,19 @@ export const projects: Project[] = [
 
     name: "Conjuga",
 
-    category: "Laboratório de Engenharia de Software",
+    category: "Aplicação Full Stack",
 
     description:
-      "Aplicação web institucional e laboratório de Engenharia de Software com arquitetura moderna, formulário Full Stack, API própria, persistência de leads e integrações com serviços externos.",
+      "Aplicação institucional desenvolvida com Next.js e TypeScript, com formulário Full Stack, API server-side, persistência de leads no Supabase e integrações voltadas a uma operação real.",
 
     longDescription:
-      "A Conjuga nasceu como o site institucional de uma empresa de engenharia de software e evoluiu para se tornar meu principal laboratório de desenvolvimento Full Stack e Engenharia de Software. O projeto utiliza Next.js, React e TypeScript em uma arquitetura baseada em componentes e vem incorporando funcionalidades reais de produção, como API para processamento de contatos, persistência de leads no Supabase, validação de formulários, consentimento de privacidade, SEO técnico, analytics condicionado ao consentimento do usuário e documentação estruturada do negócio e da aplicação. Além de representar uma presença digital real em produção, o projeto funciona como ambiente contínuo para estudar arquitetura de software, bancos de dados, integrações, automações, observabilidade, segurança, CI/CD e inteligência artificial aplicada.",
+      "A Conjuga é uma aplicação web em produção criada para representar uma operação de engenharia de software e, ao mesmo tempo, servir como ambiente real de evolução técnica. O projeto utiliza Next.js, React e TypeScript com arquitetura modular e componentes reutilizáveis. Entre as funcionalidades implementadas estão formulário de contato com processamento server-side, persistência de leads no Supabase, validação e tratamento de dados, consentimento de privacidade, SEO técnico, sitemap, integração com ferramentas de análise e deploy contínuo. O desenvolvimento do projeto permite aplicar conceitos de Engenharia de Software em um contexto real, envolvendo Front-End, APIs, banco de dados, integrações, arquitetura e manutenção evolutiva.",
 
     problem:
-      "Construir uma aplicação real capaz de representar uma operação de software e, ao mesmo tempo, servir como ambiente contínuo para aplicar conceitos de Engenharia de Software em situações próximas às encontradas em produção.",
+      "Construir uma aplicação real que representasse uma operação de software e permitisse aplicar conceitos de Engenharia de Software em produção, sem depender apenas de exercícios ou projetos artificiais de estudo.",
 
     solution:
-      "Desenvolvimento de uma aplicação Full Stack com Next.js, React e TypeScript, combinando arquitetura modular, componentes reutilizáveis, rotas de API, integração com banco de dados e serviços externos. O fluxo de contato envia os dados para uma API da própria aplicação, realiza o processamento no servidor e persiste os leads no Supabase, mantendo responsabilidades de interface, regras de processamento e armazenamento separadas.",
+      "Desenvolvimento de uma aplicação Full Stack com Next.js, React e TypeScript, separando interface, processamento server-side e persistência de dados. O fluxo de contato envia os dados para uma rota de API da aplicação, realiza validação e processamento no servidor e persiste os leads no Supabase, criando uma base preparada para novas integrações e automações.",
 
     highlights: [
       "Next.js App Router",
@@ -43,19 +43,18 @@ export const projects: Project[] = [
       "Formulário de contato com fluxo Full Stack",
       "API server-side para processamento de contatos",
       "Persistência de leads no Supabase",
-      "Migrations para evolução controlada do banco de dados",
+      "PostgreSQL gerenciado pelo Supabase",
+      "Migrations para evolução do banco de dados",
       "Validação e tratamento de dados do formulário",
-      "Consentimento de privacidade no envio de contatos",
-      "Separação entre interface, processamento e persistência",
+      "Consentimento de privacidade",
+      "Separação entre interface, API e persistência",
       "SEO técnico e sitemap",
-      "Google Search Console",
-      "Google Analytics condicionado ao consentimento do usuário",
-      "Design responsivo e acessibilidade",
+      "Integração com Google Search Console",
+      "Google Analytics condicionado ao consentimento",
+      "Design responsivo",
+      "Acessibilidade",
       "Otimização de performance",
-      "Documentação estratégica e técnica do projeto",
-      "Arquitetura preparada para integrações e automações",
-      "Deploy contínuo em ambiente de produção",
-      "Laboratório contínuo de Engenharia de Software",
+      "Deploy contínuo com Vercel",
     ],
 
     image: "/projects/conjuga.png",
@@ -81,19 +80,19 @@ export const projects: Project[] = [
 
     name: "Portfólio Profissional",
 
-    category: "Aplicação Web",
+    category: "Aplicação Full Stack",
 
     description:
-      "Aplicação web que centraliza minha trajetória profissional, projetos, artigos técnicos e publicações autorais, evoluindo também como plataforma do projeto MarllonCode.",
+      "Aplicação que centraliza minha trajetória profissional, projetos, blog, conteúdos técnicos e materiais autorais, funcionando também como plataforma do MarllonCode.",
 
     longDescription:
-      "Meu portfólio profissional foi desenvolvido com Next.js, React e TypeScript para centralizar minha trajetória, experiências, projetos técnicos e produção de conteúdo em uma única aplicação. Com o tempo, deixou de funcionar apenas como uma apresentação profissional e passou a servir também como infraestrutura para o MarllonCode, reunindo blog, artigos técnicos e páginas dedicadas a conteúdos autorais. Entre as evoluções recentes está a publicação do e-book 'Programação na Era da IA', com página própria para apresentação e distribuição do material. A aplicação utiliza App Router, rotas dinâmicas, conteúdo em MDX, arquitetura modular, componentes reutilizáveis, SEO técnico, testes automatizados e práticas voltadas a performance, acessibilidade e manutenção contínua.",
+      "Meu portfólio profissional foi desenvolvido com Next.js, React e TypeScript para centralizar minha trajetória, projetos técnicos e produção de conteúdo em uma única aplicação. Com o tempo, o projeto evoluiu de uma apresentação profissional para uma plataforma própria de conteúdo vinculada ao MarllonCode. Hoje, reúne experiências, projetos, blog em MDX, páginas dinâmicas, artigos, materiais autorais e uma área dedicada à publicação e distribuição de e-books, incluindo o 'Programação na Era da IA'. A aplicação também incorpora funcionalidades Full Stack, integrações com API e persistência de dados, além de SEO técnico, testes automatizados, acessibilidade, responsividade e deploy contínuo.",
 
     problem:
-      "Centralizar em uma única aplicação minha experiência profissional, projetos, produção técnica e conteúdos autorais, evitando depender de diferentes plataformas externas para apresentar minha trajetória e publicar materiais.",
+      "Centralizar minha presença profissional e minha produção técnica em uma plataforma própria, evitando depender de diferentes serviços externos para apresentar projetos, publicar artigos e distribuir materiais autorais.",
 
     solution:
-      "Construção de uma aplicação modular com Next.js App Router, React e TypeScript, utilizando componentes reutilizáveis e separação entre dados, conteúdo e apresentação. O projeto incorpora blog em MDX, páginas individuais de projetos, rotas de conteúdo, SEO técnico e uma área dedicada à distribuição de materiais autorais, permitindo que o portfólio evolua progressivamente de uma página profissional para uma plataforma própria de conteúdo.",
+      "Construção de uma aplicação modular com Next.js App Router, React e TypeScript, utilizando componentes reutilizáveis, conteúdo em MDX, rotas dinâmicas, APIs e integração com banco de dados. A arquitetura separa dados, conteúdo e apresentação, permitindo que o projeto evolua de um portfólio tradicional para uma plataforma pessoal de conteúdo, distribuição e experimentação técnica.",
 
     highlights: [
       "Next.js App Router",
@@ -101,22 +100,23 @@ export const projects: Project[] = [
       "Separação entre dados, conteúdo e apresentação",
       "Páginas individuais para projetos",
       "Blog integrado utilizando MDX",
-      "Rotas dinâmicas para conteúdo",
+      "Rotas dinâmicas para artigos e conteúdos",
       "Página dedicada ao e-book Programação na Era da IA",
-      "Infraestrutura de conteúdo para o projeto MarllonCode",
+      "Infraestrutura de conteúdo para o MarllonCode",
       "Publicação e distribuição de materiais autorais",
+      "Integração com Supabase",
+      "Persistência de dados",
+      "Integração com REST API",
       "SEO técnico utilizando Metadata API",
-      "URLs e páginas preparadas para compartilhamento em redes sociais",
+      "URLs preparadas para compartilhamento em redes sociais",
       "Design responsivo",
       "Acessibilidade",
       "Otimização de performance",
       "Animações e microinterações com Framer Motion",
       "Testes automatizados com Vitest",
       "Testes de componentes com React Testing Library",
-      "Coverage utilizando V8",
-      "Conteúdo desacoplado dos componentes visuais",
-      "Deploy contínuo",
-      "Evolução contínua como laboratório Front-End e de Engenharia de Software",
+      "Coverage com V8",
+      "Deploy contínuo com Netlify",
     ],
 
     image: "/projects/portfolio.png",
@@ -128,6 +128,8 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Framer Motion",
       "MDX",
+      "Supabase",
+      "REST API",
       "Vitest",
       "React Testing Library",
       "Netlify",
