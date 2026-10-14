@@ -4,9 +4,8 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 
-import { Nav } from "@/components/navigation/Nav";
-import { Footer } from "@/components/sections/Footer";
 import { Container } from "@/components/ui/Container";
+import { ProjectImageGallery } from "@/components/projects/ProjectImageGallery";
 
 import { projects } from "@/data/projects";
 import { absoluteUrl, defaultOpenGraphImage } from "@/lib/site-metadata";
@@ -63,10 +62,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <>
-      <Nav />
-
-      <main className="pt-32 pb-24">
+    <main id="conteudo" className="pt-32 pb-24">
         <Container>
           <article className="max-w-5xl">
             {/* Voltar */}
@@ -179,17 +175,10 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </header>
 
+            {/* Imagem principal */}
             {project.image && (
-              <div
-                className="
-                  mt-16
-                  overflow-hidden
-                  rounded-lg
-                  border
-                  border-base-border
-                "
-              >
-                <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-base-border">
+              <div className="mt-16 overflow-hidden rounded-lg border border-base-border">
+                <div className="relative aspect-video w-full overflow-hidden rounded-lg">
                   <Image
                     src={project.image}
                     alt={project.name}
@@ -200,6 +189,14 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   />
                 </div>
               </div>
+            )}
+
+            {/* Galeria opcional */}
+            {project.gallery && project.gallery.length > 0 && (
+              <ProjectImageGallery
+                gallery={project.gallery}
+                projectName={project.name}
+              />
             )}
 
             {/* CONTEÚDO */}
@@ -243,12 +240,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   {project.highlights.map((item) => (
                     <li
                       key={item}
-                      className="
-                        border-l
-                        border-signal
-                        pl-4
-                        text-ink-muted
-                      "
+                      className="border-l border-signal pl-4 text-ink-muted"
                     >
                       {item}
                     </li>
@@ -285,6 +277,5 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           </article>
         </Container>
       </main>
-    </>
   );
 }

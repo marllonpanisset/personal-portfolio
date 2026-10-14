@@ -24,7 +24,7 @@ describe("Contact section", () => {
 
     expect(
       screen.getByText(
-        /Aberto a conversar sobre oportunidades em suporte técnico e sustentação de aplicações/i,
+        /Aberto a oportunidades como Desenvolvedor Front-End com React, JavaScript e VTEX/i,
       ),
     ).toBeInTheDocument();
   });

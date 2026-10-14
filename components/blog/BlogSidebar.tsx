@@ -23,7 +23,7 @@ export default function BlogSidebar({ posts }: Props) {
           className="
           text-sm
           font-semibold
-          text-white
+          text-ink
           mb-4
         "
         >
@@ -36,8 +36,8 @@ export default function BlogSidebar({ posts }: Props) {
               href="/blog"
               className="
                 text-sm
-                text-muted-foreground
-                hover:text-white
+                text-ink-muted
+                hover:text-ink
                 transition-colors
               "
             >
@@ -51,8 +51,8 @@ export default function BlogSidebar({ posts }: Props) {
                 href={`/blog?category=${encodeURIComponent(category)}`}
                 className="
                   text-sm
-                  text-muted-foreground
-                  hover:text-white
+                  text-ink-muted
+                  hover:text-ink
                   transition-colors
                 "
               >
@@ -71,7 +71,7 @@ export default function BlogSidebar({ posts }: Props) {
             className="
             text-sm
             font-semibold
-            text-white
+            text-ink
             mb-4
           "
           >
@@ -92,13 +92,13 @@ export default function BlogSidebar({ posts }: Props) {
                 className="
                   rounded-full
                   border
-                  border-border
+                  border-base-border
                   px-3
                   py-1
                   text-xs
-                  text-muted-foreground
-                  hover:text-white
-                  hover:border-white/40
+                  text-ink-muted
+                  hover:text-signal
+                  hover:border-signal
                   transition-colors
                 "
               >

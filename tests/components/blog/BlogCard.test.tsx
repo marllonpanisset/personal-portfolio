@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import BlogCard from "@/components/blog/BlogCard";
 
@@ -9,6 +10,7 @@ const mockPost = {
   date: "22 Jul 2026",
   readingTime: "5 min de leitura",
   tags: ["security", "linux", "network"],
+  content: "Conteúdo do artigo sobre segurança da informação.",
 };
 
 describe("BlogCard", () => {

@@ -3,10 +3,6 @@ import { render, screen } from "@testing-library/react";
 
 import ProjectsPage from "@/app/projetos/page";
 
-vi.mock("@/components/navigation/Nav", () => ({
-  Nav: () => <nav data-testid="nav">Navigation</nav>,
-}));
-
 vi.mock("@/components/sections/Projects", () => ({
   Projects: () => <section data-testid="projects">Projects Section</section>,
 }));
@@ -18,10 +14,10 @@ vi.mock("@/components/ui/Container", () => ({
 }));
 
 describe("app/projetos/page", () => {
-  it("deve renderizar a página de projetos", () => {
+  it("deve renderizar a página de projetos sem duplicar a navegação", () => {
     render(<ProjectsPage />);
 
-    expect(screen.getByTestId("nav")).toBeInTheDocument();
+    expect(screen.queryByTestId("nav")).not.toBeInTheDocument();
 
     expect(screen.getByTestId("projects")).toBeInTheDocument();
   });
@@ -40,9 +36,7 @@ describe("app/projetos/page", () => {
     render(<ProjectsPage />);
 
     expect(
-      screen.getByText(
-        /Uma seleção de projetos desenvolvidos ao longo da minha trajetória/i,
-      ),
+      screen.getByText(/Projetos autorais e para clientes/i),
     ).toBeInTheDocument();
   });
 

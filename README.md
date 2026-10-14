@@ -1,70 +1,81 @@
-# Marllon Panisset — Portfólio Profissional
+# Marllon Panisset — Portfólio Pessoal
 
-Portfólio profissional desenvolvido para apresentar minha trajetória como Desenvolvedor Front-End, reunindo experiências profissionais, projetos autorais e artigos técnicos em uma aplicação construída com React, Next.js e TypeScript.
+Portfólio de Marllon Panisset, Desenvolvedor Front-End com React, JavaScript e VTEX, reunindo experiências profissionais, projetos autorais e para clientes, blog e materiais autorais em uma aplicação com React, Next.js e TypeScript.
 
-Além de apresentar minha experiência, este projeto funciona como um laboratório para aplicar boas práticas de arquitetura Front-End, componentização, SEO, acessibilidade, performance e testes automatizados.
+Este projeto demonstra componentização, organização de código, SEO, acessibilidade, performance e testes automatizados, com integrações Full Stack via APIs e Supabase nos contextos em que são utilizadas.
 
 ## Stack
 
-- Next.js (App Router)
-- React
+- Next.js 14 (App Router)
+- React 18
 - TypeScript
 - Tailwind CSS
 - Framer Motion — animações e microinterações
 - Lucide React — ícones
-- MDX — gerenciamento do blog
+- MDX (`next-mdx-remote`) + `gray-matter` — blog em `content/blog/`
+- Supabase (`@supabase/supabase-js`) + PostgreSQL — captura de leads de livros
 - Vitest + React Testing Library — testes automatizados
 
 ## Funcionalidades
 
-- Landing page profissional
-- Timeline de experiências
-- Listagem de projetos com páginas individuais
-- Blog integrado utilizando MDX
-- SEO técnico utilizando Metadata API do Next.js
-- Navegação responsiva
-- Componentes reutilizáveis
+- Landing page com Hero, Sobre, Experiência, Competências, Projetos e Contato
+- Timeline de experiências profissionais separada de projetos autorais
+- Listagem de projetos com páginas individuais (`/projetos/[slug]`)
+- Blog em MDX com paginação, categorias e tags (`/blog`, `/blog/[slug]`)
+- Livros e e-book com captura de leads (`/livros`, `/livros/[slug]`, `POST /api/livros/leads`)
+- SEO com Metadata API, canonical, Open Graph, `sitemap.ts` e `robots.ts`
+- Navegação responsiva com menu mobile acessível e skip link
+- Componentes reutilizáveis e tokens próprios (`base/ink/signal`)
 - Testes automatizados
 
 ## Arquitetura do projeto
 
-O projeto utiliza uma arquitetura baseada em componentes React, separação de responsabilidades e organização modular para facilitar manutenção, evolução e reutilização de código.
+```text
+app/            Rotas, layout, `sitemap.ts`, `robots.ts`, API e estilos
+components/     UI, navegação, seções, blog e livros
+content/blog/   Artigos MDX (frontmatter com `excerpt`, não `description`)
+data/           Conteúdo editável do site (perfil, experiência, projetos, skills, livros)
+lib/            Blog, metadados, Supabase server-side e regras de leads
+public/         Ativos, imagens, `cv.pdf`, e-book em `public/livros/`
+supabase/       Migrations versionadas (`book_leads`)
+tests/          Testes Vitest por domínio
+types/          Tipos de blog e livros
+```
 
-Principais conceitos aplicados:
+Conceitos aplicados:
 
-- Componentização
-- Separação entre dados e apresentação
-- Organização por domínio
-- Tipagem estática com TypeScript
+- Componentização e separação entre dados e apresentação
 - Conteúdo desacoplado da interface
-- Rotas dinâmicas
-- SEO utilizando Metadata API do Next.js
-- Testes automatizados com Vitest e React Testing Library
-
-A estrutura foi planejada para permitir evolução contínua sem concentrar informações diretamente nos componentes visuais.
-
-## Testes
-
-O projeto possui testes automatizados para garantir estabilidade dos componentes, páginas e funções auxiliares.
-
-Ferramentas utilizadas:
-
-- Vitest
-- React Testing Library
-- Coverage V8
-
-Os testes abrangem componentes, páginas, dados e funções utilitárias utilizadas pela aplicação.
+- Rotas dinâmicas e geração estática onde aplicável
+- Tipagem estática com TypeScript
+- SEO com Metadata API + sitemap/robots
+- Testes com Vitest e React Testing Library
 
 ## Editando o conteúdo
 
-Todo o conteúdo textual fica isolado na pasta `data/`, permitindo atualizar informações sem alterar os componentes da interface.
-
 | Arquivo              | Descrição                                         |
 | -------------------- | ------------------------------------------------- |
-| `data/profile.ts`    | Informações pessoais, descrição, contatos e links |
-| `data/experience.ts` | Experiências profissionais                        |
-| `data/skills.ts`     | Competências técnicas                             |
-| `data/projects.ts`   | Projetos apresentados no portfólio                |
+| `data/profile.ts`    | Perfil, resumo, contatos e tempo em TI/Front-End  |
+| `data/experience.ts` | Experiências profissionais (não inclui autorais)  |
+| `data/skills.ts`     | Competências, com IA como fluxo, não como produto |
+| `data/projects.ts`   | Projetos autorais e para clientes                 |
+| `data/books.ts`      | Livros e e-books publicados                       |
+| `content/blog/*.mdx` | Artigos (usar `excerpt`, `date`, `category`)      |
+
+Experiências profissionais e projetos autorais são listas separadas. Não cadastre projeto autoral como emprego.
+
+## Variáveis de ambiente
+
+Necessárias para a captura de leads (`/api/livros/leads`):
+
+```bash
+SUPABASE_URL=
+SUPABASE_SECRET_KEY=
+```
+
+- Use `.env.local` para desenvolvimento. Nunca commite `.env`.
+- `.env.example` lista apenas nomes, sem valores.
+- Sem essas variáveis, a API retorna `503` com mensagem amigável (ver `lib/supabase/server.ts`).
 
 ## Rodando localmente
 
@@ -73,34 +84,39 @@ npm install
 npm run dev
 ```
 
-Acesse:
+Acesse `http://localhost:3000`.
 
-```
-http://localhost:3000
-```
-
-## Build de produção
+## Validação
 
 ```bash
+npm run lint
+npm run typecheck
+npm run test:run
+npm run coverage
 npm run build
 npm start
 ```
 
-## Objetivo
+Observação: `next` está em `14.2.35` e `@next/mdx` em `16.x`. Não faça upgrade amplo apenas para eliminar avisos sem avaliar impacto em MDX/blog e build.
 
-Este projeto foi criado para centralizar minha presença profissional e demonstrar minha forma de desenvolver aplicações Front-End, aplicando organização de código, componentização, acessibilidade, SEO, performance e testes automatizados.
+## Deploy
 
-O projeto evolui continuamente conforme avanço nos estudos de Engenharia de Software e incorporo novas tecnologias e boas práticas de desenvolvimento.
+Deploy contínuo no Netlify a partir da branch `main`:
+
+- Site: `https://marllon.netlify.app`
+- `sitemap.xml` e `robots.txt` são gerados pelo App Router.
+
+## Testes
+
+- Vitest + jsdom + Testing Library
+- Cobertura V8 via `npm run coverage`
+- Abrangem dados, componentes, páginas, blog, livros e metadados
 
 ## Autor
 
-**Marllon Panisset**
+**Marllon Panisset — Desenvolvedor Front-End | React • JavaScript • VTEX**
 
-GitHub  
-https://github.com/marllonpanisset
-
-LinkedIn  
-https://linkedin.com/in/marllon-panisset
-
-Portfólio  
-https://marllon.netlify.app
+- GitHub: https://github.com/marllonpanisset
+- LinkedIn: https://www.linkedin.com/in/marllon-panisset
+- Portfólio: https://marllon.netlify.app
+- Currículo: `/cv.pdf`

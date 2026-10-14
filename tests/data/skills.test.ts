@@ -33,13 +33,20 @@ describe("Skills data", () => {
 
     const requiredSkills = [
       "React",
+      "JavaScript",
       "Next.js",
       "TypeScript",
-      "JavaScript",
-      "Git/GitHub",
-      "Linux",
-      "Suporte N1/N2",
-      "SQL básico",
+      "VTEX IO",
+      "VTEX Legacy",
+      "jQuery",
+      "MDX",
+      "Supabase",
+      "Git",
+      "GitHub",
+      "Vitest",
+      "React Testing Library",
+      "ESLint",
+      "SEO",
     ];
 
     requiredSkills.forEach((skill) => {
@@ -50,9 +57,8 @@ describe("Skills data", () => {
   it("deve possuir categorias profissionais esperadas", () => {
     const labels = skillGroups.map((group) => group.label);
 
-    expect(labels).toContain("Suporte Técnico");
-    expect(labels).toContain("Infraestrutura");
-    expect(labels).toContain("Aplicações & Desenvolvimento");
-    expect(labels).toContain("Plataformas");
+    expect(labels).toContain("Front-End");
+    expect(labels).toContain("E-commerce e CMS");
+    expect(labels).toContain("Qualidade e Ferramentas");
   });
 });

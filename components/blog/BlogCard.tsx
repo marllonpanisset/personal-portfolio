@@ -14,11 +14,11 @@ export default function BlogCard({ post }: Props) {
         group
         rounded-2xl
         border
-        border-border/40
-        bg-card/30
+        border-base-border
+        bg-base-surface/40
         p-6
         transition
-        hover:border-primary/30
+        hover:border-signal
       "
     >
       <CategoryBadge category={post.category} />
@@ -26,12 +26,12 @@ export default function BlogCard({ post }: Props) {
       <h2
         className="
           mt-5
-          font-heading
+          font-display
           text-xl
           font-bold
-          text-white
+          text-ink
           transition-colors
-          group-hover:text-primary
+          group-hover:text-signal
         "
       >
         {post.title}
@@ -42,7 +42,7 @@ export default function BlogCard({ post }: Props) {
           mt-3
           text-sm
           leading-relaxed
-          text-muted-foreground
+          text-ink-muted
         "
       >
         {post.excerpt}
@@ -54,7 +54,7 @@ export default function BlogCard({ post }: Props) {
           flex
           justify-between
           text-xs
-          text-muted-foreground
+          text-ink-muted
         "
       >
         <span>{post.date}</span>
@@ -77,11 +77,11 @@ export default function BlogCard({ post }: Props) {
               className="
                 rounded-full
                 border
-                border-border/40
+                border-base-border
                 px-2
                 py-1
                 text-xs
-                text-muted-foreground
+                text-ink-muted
               "
             >
               #{tag}
@@ -92,12 +92,13 @@ export default function BlogCard({ post }: Props) {
 
       <Link
         href={`/blog/${post.slug}`}
+        aria-label={`Ler artigo: ${post.title}`}
         className="
           mt-6
           inline-block
           text-sm
           font-semibold
-          text-primary
+          text-signal
           transition-opacity
           hover:opacity-80
         "

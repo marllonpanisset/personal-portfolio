@@ -87,9 +87,7 @@ describe("BlogPage", () => {
     ).toBeInTheDocument();
 
     expect(
-      screen.getByText(
-        /Um espaço para documentar minha evolução em tecnologia/,
-      ),
+      screen.getByText(/Um espaço para documentar minha evolução como/),
     ).toBeInTheDocument();
   });
 

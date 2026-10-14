@@ -35,12 +35,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: `${profile.name} — ${profile.role} & ${profile.roleSecondary}`,
+    default: `${profile.name} — ${profile.role} | React, JavaScript e VTEX`,
     template: `%s — ${profile.name}`,
   },
 
   description:
-    "Portfólio profissional com projetos, estudos e artigos sobre tecnologia, desenvolvimento, suporte de aplicações e evolução na carreira de TI.",
+    "Portfólio de Marllon Panisset, Desenvolvedor Front-End com React, JavaScript e VTEX. Projetos com Next.js, TypeScript, integrações Full Stack e testes automatizados.",
 
   category: "technology",
 
@@ -50,26 +50,20 @@ export const metadata: Metadata = {
 
   keywords: [
     "Marllon Panisset",
-    "Tecnologia",
-    "Desenvolvimento Web",
-    "Desenvolvedor Web",
     "Desenvolvedor Front-End",
     "Front-End Developer",
-    "Front-End",
-    "Desenvolvimento de Aplicações Web",
     "React",
+    "JavaScript",
+    "VTEX",
+    "VTEX IO",
+    "VTEX Legacy",
     "Next.js",
     "TypeScript",
-    "Python",
-    "SQL",
-    "Application Support",
-    "Suporte de Aplicações",
-    "Suporte N1 N2",
-    "Sustentação de Sistemas",
-    "Troubleshooting",
-    "Infraestrutura",
-    "Carreira em Tecnologia",
-    "Projetos de Tecnologia",
+    "HTML",
+    "CSS",
+    "Desenvolvimento Web",
+    "E-commerce",
+    "Portfólio Front-End",
   ],
 
   authors: [
@@ -86,10 +80,10 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: siteUrl,
 
-    title: `${profile.name} — ${profile.role} & ${profile.roleSecondary}`,
+    title: `${profile.name} — ${profile.role} | React, JavaScript e VTEX`,
 
     description:
-      "Projetos, estudos e artigos sobre tecnologia, desenvolvimento, suporte de aplicações e minha evolução profissional.",
+      "Projetos Front-End com React, JavaScript e VTEX, além de Next.js, TypeScript e integrações Full Stack.",
 
     siteName: profile.name,
 
@@ -106,10 +100,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: `${profile.name} — ${profile.role} & ${profile.roleSecondary}`,
+    title: `${profile.name} — ${profile.role} | React, JavaScript e VTEX`,
 
     description:
-      "Projetos, estudos e artigos sobre tecnologia, desenvolvimento e evolução profissional.",
+      "Projetos Front-End com React, JavaScript e VTEX, além de Next.js e TypeScript.",
 
     images: [defaultOpenGraphImage],
   },
@@ -135,6 +129,12 @@ export default function RootLayout({
       className={`${display.variable} ${body.variable} ${mono.variable}`}
     >
       <body>
+        <a
+          href="#conteudo"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-signal focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-base"
+        >
+          Pular para o conteúdo
+        </a>
         <Nav />
 
         {children}

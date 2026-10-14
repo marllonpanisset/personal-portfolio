@@ -44,7 +44,7 @@ export default function BlogPagination({
         items-center
         justify-between
         border-t
-        border-border/40
+        border-base-border
         pt-8
       "
       aria-label="Paginação"
@@ -54,8 +54,8 @@ export default function BlogPagination({
           href={createUrl(currentPage - 1)}
           className="
             text-sm
-            text-muted-foreground
-            hover:text-white
+            text-ink-muted
+            hover:text-ink
             transition-colors
           "
         >
@@ -93,8 +93,8 @@ export default function BlogPagination({
 
               ${
                 page === currentPage
-                  ? "bg-primary text-primary-foreground"
-                  : "text-muted-foreground hover:text-white"
+                  ? "bg-signal text-base"
+                  : "text-ink-muted hover:text-ink"
               }
 
             `}
@@ -109,8 +109,8 @@ export default function BlogPagination({
           href={createUrl(currentPage + 1)}
           className="
             text-sm
-            text-muted-foreground
-            hover:text-white
+            text-ink-muted
+            hover:text-ink
             transition-colors
           "
         >

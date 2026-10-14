@@ -33,6 +33,6 @@ describe("CategoryBadge", () => {
 
     const badge = screen.getByText("Tecnologia");
 
-    expect(badge).toHaveClass("inline-flex", "rounded-full", "text-primary");
+    expect(badge).toHaveClass("inline-flex", "rounded-full", "text-signal");
   });
 });

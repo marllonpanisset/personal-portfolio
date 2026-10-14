@@ -31,7 +31,7 @@ describe("Projects section", () => {
     render(<Projects />);
 
     projects.forEach((project) => {
-      expect(screen.getByText(project.category)).toBeInTheDocument();
+      expect(screen.getAllByText(project.category).length).toBeGreaterThan(0);
     });
   });
 
@@ -39,7 +39,7 @@ describe("Projects section", () => {
     render(<Projects />);
 
     projects.forEach((project) => {
-      expect(screen.getByText(project.description)).toBeInTheDocument();
+      expect(screen.getAllByText(project.description).length).toBeGreaterThan(0);
     });
   });
 

@@ -10,13 +10,13 @@ export default function CategoryBadge({ category }: Props) {
         items-center
         rounded-full
         border
-        border-primary/20
-        bg-primary/10
+        border-signal/30
+        bg-signal-dim/50
         px-3
         py-1
         text-xs
         font-medium
-        text-primary
+        text-signal
       "
     >
       {category}

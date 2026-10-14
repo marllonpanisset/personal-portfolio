@@ -119,13 +119,13 @@ export function Hero() {
           className="mt-20 flex max-w-2xl flex-wrap gap-x-12 gap-y-6 border-t border-base-border pt-8"
         >
           <Metric
-            value={`${profile.yearsOfExperience}`}
-            label="Anos em Tecnologia"
+            value={`${profile.yearsFrontend}`}
+            label="Anos em Front-End"
           />
 
           <Metric value="React" label="Front-End" />
 
-          <Metric value="N1 / N2" label="Suporte Técnico" />
+          <Metric value="VTEX" label="E-commerce" />
 
           <Metric value="Web" label="Aplicações Digitais" />
         </motion.div>

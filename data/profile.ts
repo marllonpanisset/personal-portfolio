@@ -6,14 +6,16 @@ export const profile = {
 
   role: "Desenvolvedor Front-End",
 
-  roleSecondary: "Estudante de Engenharia de Software",
+  roleSecondary: "React • JavaScript • VTEX",
 
   tagline:
-    "Desenvolvedor Front-End com experiência na criação de aplicações web, plataformas digitais e e-commerces. Atualmente desenvolvo projetos com React, Next.js e TypeScript enquanto amplio minha formação em Engenharia de Software, arquitetura de aplicações, desenvolvimento back-end e inteligência artificial aplicada.",
+    "Desenvolvedor Front-End com experiência profissional desde 2016 e trajetória em tecnologia desde 2011. Atuação com React, JavaScript, HTML, CSS e VTEX Legacy/IO, além de projetos autorais com Next.js, TypeScript, APIs REST e integrações. Fundador da Conjuga, iniciativa de engenharia de software voltada ao desenvolvimento de soluções digitais para empresas.",
 
   location: "Rio de Janeiro, Brasil",
 
-  yearsOfExperience: 15,
+  yearsInTech: 15,
+
+  yearsFrontend: 10,
 
   status: "open_to_work",
 
@@ -32,15 +34,15 @@ export const about = {
 
     "Trabalho principalmente com React, Next.js, TypeScript e JavaScript, aplicando boas práticas de componentização, acessibilidade, SEO, performance e organização de código para criar aplicações modernas, escaláveis e de fácil manutenção.",
 
-    "Minha carreira em tecnologia começou no suporte técnico, experiência que construiu uma base sólida em troubleshooting, infraestrutura e diagnóstico de problemas. Essa vivência complementa minha atuação como desenvolvedor e contribui para uma visão mais ampla sobre qualidade, estabilidade e comportamento das aplicações em produção.",
+    "Minha trajetória em tecnologia começou em 2011 no suporte técnico N1/N2, experiência que construiu base sólida em troubleshooting, diagnóstico de problemas e comportamento de aplicações em produção. Desde 2016 atuo como Desenvolvedor Front-End, e essa vivência anterior complementa minha atuação com uma visão mais ampla sobre qualidade e estabilidade.",
 
-    "Atualmente curso Bacharelado em Engenharia de Software e utilizo meus projetos autorais como laboratório para aprofundar conhecimentos em arquitetura de software, desenvolvimento back-end, bancos de dados, Docker, CI/CD e inteligência artificial aplicada, incorporando continuamente esses conceitos em projetos reais.",
+    "Nos projetos autorais, aplico Next.js, TypeScript, APIs REST e Supabase/PostgreSQL no desenvolvimento de soluções web, explorando arquitetura modular, organização de código, SEO, acessibilidade e testes. Na Conjuga, utilizo essa experiência para desenvolver soluções de engenharia de software, com ferramentas de IA como Codex, OpenCode e MCP apoiando análise, implementação, auditoria e depuração, sempre com revisão crítica das soluções."
   ],
 
   focusAreas: [
-    "React, Next.js e TypeScript",
-    "Arquitetura Front-End e componentização",
+    "React, JavaScript e VTEX",
+    "Next.js, TypeScript e componentização",
     "SEO, acessibilidade, performance e UX",
-    "Engenharia de Software, back-end e IA aplicada",
+    "APIs REST, Supabase e IA aplicada ao fluxo de desenvolvimento",
   ],
 } as const;

@@ -3,10 +3,6 @@ import { render, screen } from "@testing-library/react";
 
 import Home from "@/app/page";
 
-vi.mock("@/components/navigation/Nav", () => ({
-  Nav: () => <nav>Nav</nav>,
-}));
-
 vi.mock("@/components/sections/Hero", () => ({
   Hero: () => <section>Hero</section>,
 }));
@@ -32,10 +28,10 @@ vi.mock("@/components/sections/Contact", () => ({
 }));
 
 describe("Home Page", () => {
-  it("deve renderizar a estrutura principal da home", () => {
+  it("deve renderizar a estrutura principal da home sem duplicar a navegação", () => {
     render(<Home />);
 
-    expect(screen.getByText("Nav")).toBeInTheDocument();
+    expect(screen.queryByText("Nav")).not.toBeInTheDocument();
 
     expect(screen.getByText("Hero")).toBeInTheDocument();
     expect(screen.getByText("About")).toBeInTheDocument();
@@ -64,10 +60,10 @@ describe("Home Page", () => {
     ]);
   });
 
-  it("deve conter a navegação fora do main", () => {
+  it("deve conter apenas o conteúdo principal, sem navegação própria", () => {
     render(<Home />);
 
-    expect(screen.getByText("Nav")).toBeInTheDocument();
+    expect(screen.queryByText("Nav")).not.toBeInTheDocument();
 
     expect(screen.getByRole("main")).toBeInTheDocument();
   });

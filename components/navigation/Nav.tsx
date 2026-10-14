@@ -20,7 +20,7 @@ const links = [
 const socialLinks = [
   { href: "https://github.com/marllonpanisset", label: "GitHub", icon: Github },
   {
-    href: "https://linkedin.com/in/marllon-panisset",
+    href: "https://www.linkedin.com/in/marllon-panisset",
     label: "LinkedIn",
     icon: Linkedin,
   },
@@ -204,7 +204,7 @@ export function Nav() {
               aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
-              className="flex h-9 w-9 items-center justify-center rounded-md text-ink transition-colors hover:bg-base-hover md:hidden"
+              className="flex h-9 w-9 items-center justify-center rounded-md text-ink transition-colors hover:bg-base-surface md:hidden"
             >
               <AnimatePresence mode="wait">
                 {isOpen ? (
@@ -265,7 +265,7 @@ export function Nav() {
                 type="button"
                 onClick={closeMenu}
                 aria-label="Fechar menu"
-                className="flex h-9 w-9 items-center justify-center rounded-md text-ink transition-colors hover:bg-base-hover"
+                className="flex h-9 w-9 items-center justify-center rounded-md text-ink transition-colors hover:bg-base-surface"
               >
                 <X className="h-5 w-5" />
               </button>

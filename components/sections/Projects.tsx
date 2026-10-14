@@ -59,7 +59,11 @@ export function Projects() {
                   hover:border-signal
                 "
               >
-                <Link href={`/projetos/${project.slug}`} className="block">
+                <Link
+                  href={`/projetos/${project.slug}`}
+                  aria-label={`Ver detalhes do projeto ${project.name}`}
+                  className="block"
+                >
                   {project.image && (
                     <div
                       className="
@@ -147,7 +151,10 @@ export function Projects() {
                       ))}
                     </div>
 
-                    <div className="mt-5 font-mono text-xs text-signal">
+                    <div
+                      className="mt-5 font-mono text-xs text-signal"
+                      aria-hidden="true"
+                    >
                       Ver detalhes do projeto →
                     </div>
                   </div>

@@ -92,11 +92,9 @@ describe("BlogPostPage", () => {
 
     const content = screen.getByTestId("mdx-content");
 
-    expect(content).toHaveTextContent(
-      "Minha trajetória na tecnologia nunca foi linear.",
-    );
+    expect(content.textContent?.length).toBeGreaterThan(100);
 
-    expect(content).toHaveTextContent("Tecnologia é uma construção contínua");
+    expect(content).toHaveTextContent("Minha relação com tecnologia começou");
   });
 
   it("deve chamar notFound quando slug não existir", async () => {

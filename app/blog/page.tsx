@@ -77,7 +77,7 @@ export default async function BlogPage({ searchParams }: Props) {
   );
 
   return (
-    <main className="py-32">
+    <main id="conteudo" className="py-32">
       <Container>
         <SectionLabel index="04" label="Blog" />
 
@@ -87,7 +87,7 @@ export default async function BlogPage({ searchParams }: Props) {
             text-4xl
             md:text-5xl
             font-bold
-            text-white
+            text-ink
           "
           >
             Tecnologia, carreira e construção de projetos.
@@ -96,13 +96,13 @@ export default async function BlogPage({ searchParams }: Props) {
           <p
             className="
             mt-5
-            text-muted-foreground
+            text-ink-muted
             leading-relaxed
           "
           >
-            Um espaço para documentar minha evolução em tecnologia, estudos,
-            projetos pessoais e aprendizados durante minha transição
-            profissional.
+            Um espaço para documentar minha evolução como Desenvolvedor
+            Front-End, estudos, projetos com React, Next.js e TypeScript e
+            aprendizados na construção de aplicações reais.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default async function BlogPage({ searchParams }: Props) {
             ) : (
               <p
                 className="
-                text-muted-foreground
+                text-ink-muted
               "
               >
                 Nenhum artigo encontrado.

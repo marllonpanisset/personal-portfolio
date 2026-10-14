@@ -18,11 +18,7 @@ describe("Hero section", () => {
   it("deve renderizar informações principais do perfil", () => {
     render(<Hero />);
 
-    expect(
-      screen.getByText(profile.role, {
-        exact: false,
-      }),
-    ).toBeInTheDocument();
+    expect(screen.getAllByText(profile.role, { exact: false }).length).toBeGreaterThan(0);
 
     expect(
       screen.getByText(profile.roleSecondary, {
@@ -88,15 +84,13 @@ describe("Hero section", () => {
   it("deve renderizar as métricas profissionais", () => {
     render(<Hero />);
 
-    expect(
-      screen.getByText(`${profile.yearsOfExperience}`),
-    ).toBeInTheDocument();
+    expect(screen.getByText(`${profile.yearsFrontend}`)).toBeInTheDocument();
 
-    expect(screen.getByText("Anos em Tecnologia")).toBeInTheDocument();
+    expect(screen.getByText("Anos em Front-End")).toBeInTheDocument();
 
     expect(screen.getByText("React")).toBeInTheDocument();
 
-    expect(screen.getByText("N1 / N2")).toBeInTheDocument();
+    expect(screen.getByText("VTEX")).toBeInTheDocument();
 
     expect(screen.getByText("Web")).toBeInTheDocument();
   });

@@ -80,7 +80,7 @@ export default async function BlogPostPage({ params }: Props) {
             text-4xl
             md:text-5xl
             font-bold
-            text-white
+            text-ink
             leading-tight
           "
           >
@@ -92,7 +92,7 @@ export default async function BlogPostPage({ params }: Props) {
             mt-6
             max-w-3xl
             text-lg
-            text-muted-foreground
+            text-ink-muted
             leading-relaxed
           "
           >
@@ -106,7 +106,7 @@ export default async function BlogPostPage({ params }: Props) {
             flex-wrap
             gap-4
             text-sm
-            text-muted-foreground
+            text-ink-muted
           "
           >
             <span>{post.date}</span>
@@ -131,10 +131,10 @@ export default async function BlogPostPage({ params }: Props) {
                   px-3
                   py-1
                   rounded-full
-                  bg-primary/10
-                  text-primary
+                  bg-signal-dim/50
+                  text-signal
                   border
-                  border-primary/20
+                  border-signal/30
                 "
                 >
                   #{tag}
@@ -147,7 +147,7 @@ export default async function BlogPostPage({ params }: Props) {
             className="
               mt-16
               border-t
-              border-border/40
+              border-base-border
               pt-12
 
               prose
@@ -155,7 +155,7 @@ export default async function BlogPostPage({ params }: Props) {
               prose-lg
               max-w-4xl
 
-              prose-headings:text-white
+              prose-headings:text-ink
               prose-headings:font-bold
 
               prose-h1:text-4xl
@@ -169,25 +169,25 @@ export default async function BlogPostPage({ params }: Props) {
               prose-h3:mt-8
               prose-h3:mb-4
 
-              prose-p:text-muted-foreground
+              prose-p:text-ink-muted
               prose-p:leading-relaxed
               prose-p:my-6
 
               prose-ul:my-6
-              prose-li:text-muted-foreground
+              prose-li:text-ink-muted
               prose-li:my-2
 
-              prose-code:text-primary
-              prose-code:bg-primary/10
+              prose-code:text-signal
+              prose-code:bg-signal-dim/50
               prose-code:px-1
               prose-code:rounded
 
               prose-pre:bg-black/40
               prose-pre:border
-              prose-pre:border-border/40
+              prose-pre:border-base-border
 
-              prose-blockquote:border-primary/40
-              prose-blockquote:text-muted-foreground
+              prose-blockquote:border-signal/40
+              prose-blockquote:text-ink-muted
             "
           >
             <MDXRemote source={post.content} />

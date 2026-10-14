@@ -54,8 +54,8 @@ export function Contact() {
           className="max-w-2xl"
         >
           <h2 className="font-display text-2xl font-semibold leading-snug text-ink md:text-3xl">
-            Aberto a conversar sobre oportunidades em suporte técnico e
-            sustentação de aplicações.
+            Aberto a oportunidades como Desenvolvedor Front-End com React,
+            JavaScript e VTEX.
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-ink-muted md:text-base">
             Respondo em até 24h nos canais abaixo.

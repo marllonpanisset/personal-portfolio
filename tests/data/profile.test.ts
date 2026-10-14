@@ -11,8 +11,10 @@ describe("Profile data", () => {
     expect(profile.location).toBeDefined();
   });
 
-  it("deve possuir anos de experiência válidos", () => {
-    expect(profile.yearsOfExperience).toBeGreaterThan(0);
+  it("deve possuir tempo de experiência separado em TI e Front-End", () => {
+    expect(profile.yearsInTech).toBeGreaterThan(0);
+    expect(profile.yearsFrontend).toBeGreaterThan(0);
+    expect(profile.yearsFrontend).toBeLessThanOrEqual(profile.yearsInTech);
   });
 
   it("deve possuir status profissional definido", () => {

@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import BlogPagination from "@/components/blog/BlogPagination";
 
@@ -116,6 +117,6 @@ describe("BlogPagination", () => {
       name: "2",
     });
 
-    expect(currentPage.className).toContain("bg-primary");
+    expect(currentPage.className).toContain("bg-signal");
   });
 });

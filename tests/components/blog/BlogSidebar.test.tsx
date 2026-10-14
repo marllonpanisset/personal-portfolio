@@ -12,6 +12,7 @@ const posts = [
     date: "2026-07-22",
     readingTime: "5 min",
     tags: ["nextjs", "typescript"],
+    content: "Conteúdo do primeiro post.",
   },
   {
     slug: "segundo-post",
@@ -21,6 +22,7 @@ const posts = [
     date: "2026-07-21",
     readingTime: "8 min",
     tags: ["cybersecurity", "typescript"],
+    content: "Conteúdo do segundo post.",
   },
 ];
 

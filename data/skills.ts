@@ -1,5 +1,5 @@
-// Competências exibidas como tags. Agrupadas por categoria apenas para
-// organização interna — a interface pode optar por renderizar tudo junto.
+ // Competências exibidas como tags. Agrupadas por categoria.
+// Prioriza Front-End, React, JavaScript e VTEX, conforme currículo.
 
 export type SkillGroup = {
   label: string;
@@ -11,61 +11,70 @@ export const skillGroups: SkillGroup[] = [
     label: "Front-End",
     items: [
       "React",
-      "Next.js",
-      "TypeScript",
       "JavaScript",
+      "TypeScript",
+      "Next.js",
       "HTML5",
       "CSS3",
       "SCSS",
+      "jQuery",
       "Tailwind CSS",
-    ],
-  },
-
-  {
-    label: "Desenvolvimento Web",
-    items: [
       "Componentização",
-      "APIs REST",
-      "SEO",
-      "Performance",
-      "Acessibilidade",
       "Responsividade",
       "UX",
-      "Git",
-      "GitHub",
+      "Acessibilidade",
+      "Performance",
     ],
   },
 
   {
-    label: "Plataformas",
+    label: "E-commerce e CMS",
     items: [
       "VTEX IO",
       "VTEX Legacy",
       "WordPress",
       "Drupal",
       "Hugo",
-      "Pug",
+      "MDX",
       "Markdown",
+      "Pug",
     ],
   },
 
   {
-    label: "Testes",
-    items: ["Vitest", "React Testing Library", "Testes Automatizados"],
-  },
-
-  {
-    label: "Tecnologias em evolução",
+    label: "APIs e Integrações",
     items: [
-      "Node.js",
+      "APIs REST",
+      "Supabase",
       "PostgreSQL",
-      "Docker",
-      "CI/CD",
-      "Arquitetura de Software",
-      "Inteligência Artificial",
-      "Python",
-      "Pandas",
-      "Streamlit",
+      "Migrations",
+      "SEO",
     ],
+  },
+
+  {
+    label: "Qualidade e Ferramentas",
+    items: [
+      "Git",
+      "GitHub",
+      "Vitest",
+      "React Testing Library",
+      "Testes Automatizados",
+      "ESLint",
+    ],
+  },
+
+  {
+    label: "Desenvolvimento Assistido por IA",
+    items: [
+      "Codex",
+      "OpenCode",
+      "MCP",
+    ],
+  },
+
+  {
+    label: "Complementar",
+    items: ["Python", "Pandas", "Streamlit"],
   },
 ];

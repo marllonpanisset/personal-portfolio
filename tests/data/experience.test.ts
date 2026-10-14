@@ -25,16 +25,18 @@ describe("Experience data", () => {
     });
   });
 
-  it("não deve possuir empresas duplicadas", () => {
-    const companies = experience.map((item) => item.company);
+  it("não deve possuir vínculos duplicados", () => {
+    const keys = experience.map(
+      (item) => `${item.company}__${item.role}__${item.period}`,
+    );
 
-    const uniqueCompanies = new Set(companies);
+    const uniqueKeys = new Set(keys);
 
-    expect(uniqueCompanies.size).toBe(companies.length);
+    expect(uniqueKeys.size).toBe(keys.length);
   });
 
   it("deve estar ordenado da experiência mais recente para a mais antiga", () => {
-    expect(experience[0].period).toBe("Jun 2022 — Dez 2022");
+    expect(experience[0].period).toBe("Ago 2026 — Atual");
 
     expect(experience[experience.length - 1].period).toBe(
       "Ago 2011 — Jan 2016",
